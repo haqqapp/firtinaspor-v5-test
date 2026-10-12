@@ -146,7 +146,7 @@ function startDaten() {
       nr, datum, zeit, gegner, ha, wb, tf, tg,
     })),
     noten,
-    wNote: 0.7, wTraining: 0.3, kaderGroesse: 15, reserve: 1,
+    wNote: 0.7, wTraining: 0.3, kaderGroesse: 16, reserve: 1,
     formation: "4-2-3-1", elf: {},
     trainerNoten: {}, spielPositionen: {}, spielberichte: {}, aenderungen: [],
   };
@@ -186,6 +186,9 @@ function normalisiereDaten(raw) {
       posStaerke: s.posStaerke || (s.haupt ? { [s.haupt]: 100, ...Object.fromEntries((s.neben || []).map((p) => [p, 70])) } : {}),
     })),
     elf: raw?.elf || {},
+    kaderGroesse: raw?.v8Kader17 ? 16 : 16,
+    reserve: 1,
+    v8Kader17: true,
   };
 }
 
@@ -207,7 +210,18 @@ function useDaten(session) {
   const [daten, setDaten] = useState(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? normalisiereDaten(JSON.parse(raw)) : normalisiereDaten(exportDaten);
+      const alt = raw ? JSON.parse(raw) : exportDaten;
+      if (alt.v6SpielplanEingetragen) return normalisiereDaten(alt);
+      const bestehendeTermine = new Set((alt.trainings || []).map(t => t.datum));
+      const trainings = [...(alt.trainings || []), ...exportDaten.trainings.filter(t => !bestehendeTermine.has(t.datum))];
+      const bekannteSpiele = new Set((alt.spiele || []).map(sp => `${sp.datum}|${sp.gegner.toLowerCase()}`));
+      const spiele = [...(alt.spiele || [])];
+      for (const sp of exportDaten.spiele) {
+        if (!bekannteSpiele.has(`${sp.datum}|${sp.gegner.toLowerCase()}`) && !spiele.some(x => x.nr === sp.nr)) spiele.push(sp);
+      }
+      const merged = normalisiereDaten({ ...alt, trainings, spiele, v6SpielplanEingetragen: true });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      return merged;
     } catch {
       return normalisiereDaten(exportDaten);
     }
@@ -241,6 +255,7 @@ function useDaten(session) {
 
   return [daten, speichern, status];
 }
+const istLigaSpiel = (sp) => sp && !/freundschaft|testspiel/i.test(String(sp.wb || ""));
 /* ---------------------------------------------------------------- Berechnung */
 function trainerEintraege(d, spielNr, name) {
   const g = d.trainerNoten?.["g" + spielNr]?.[name];
@@ -259,7 +274,7 @@ function spielNote(d, spielNr, name) {
 
 function formDaten(d, name) {
   const werte = d.spiele
-    .filter((sp) => sp.datum && sp.datum <= heute())
+    .filter((sp) => istLigaSpiel(sp) && sp.datum && sp.datum <= heute())
     .sort((a, b) => (a.datum > b.datum ? 1 : -1))
     .map((sp) => ({ nr: sp.nr, datum: sp.datum, note: spielNote(d, sp.nr, name), pos: d.spielPositionen?.["g" + sp.nr]?.[name] || null }))
     .filter((x) => typeof x.note === "number");
@@ -287,12 +302,27 @@ function formDaten(d, name) {
 
 function spielerSpielStats(d, name) {
   let tore = 0, assists = 0;
-  Object.values(d.spielberichte || {}).forEach((b) => {
+  d.spiele.filter(istLigaSpiel).forEach((sp) => {
+    const b = d.spielberichte?.["g" + sp.nr];
     const st = b?.stats?.[name] || {};
     tore += Number(st.tore || 0);
     assists += Number(st.vorlagen || 0);
   });
   return { tore, assists };
+}
+
+function minutenKennzahlen(d, name) {
+  let minuten = 0, tore = 0, assists = 0, spieleMitMinuten = 0;
+  d.spiele.filter(istLigaSpiel).forEach(sp => {
+    const b = d.spielberichte?.["g" + sp.nr];
+    const st = b?.stats?.[name];
+    if (st?.minuten == null || !Number.isFinite(Number(st.minuten)) || Number(st.minuten) < 0) return;
+    minuten += Number(st.minuten);
+    tore += Number(st.tore || 0);
+    assists += Number(st.vorlagen || 0);
+    spieleMitMinuten++;
+  });
+  return { minuten, tore, assists, spieleMitMinuten };
 }
 
 function positionsStaerke(w, code) {
@@ -333,7 +363,7 @@ function rechne(d) {
     });
     const dabei = trainingsFuerSpieler.filter((t) => (d.anwesend[t.id] || []).includes(s.name)).length;
     const quote = trainingsFuerSpieler.length ? dabei / trainingsFuerSpieler.length : null;
-    const noten = d.spiele
+    const noten = d.spiele.filter(istLigaSpiel)
       .map((sp) => spielNote(d, sp.nr, s.name))
       .filter((v) => typeof v === "number");
     const oNote = noten.length ? noten.reduce((a, b) => a + b, 0) / noten.length : null;
@@ -346,8 +376,8 @@ function rechne(d) {
     return { ...s, trainings: dabei, quote, oNote, einsaetze: noten.length, score, ...form, ...stats, datenstatus };
   });
 
-  // Kaderregel: Im gesamten 16er-Aufgebot wird genau ein Torwart eingeplant.
-  // Die restlichen Plätze (inkl. Reserve/16. Mann) gehören Feldspielern.
+  // Kaderregel: 16 aktive Spieler (11 Startelf + 5 Bank) und ein 17. Spieler als Reserve.
+  // Im aktiven Kader ist maximal ein Torwart; die Reserve wird getrennt geplant.
   const verfuegbar = werte.filter((w) => w.aktiv !== false && w.verfuegbar && w.sperre === 0 && (!w.aktivBis || w.aktivBis >= heute()));
   const torhueter = verfuegbar.filter((w) => w.haupt === "TW").sort((a, b) => b.score - a.score);
   const fixerTW = torhueter.filter((w) => w.fix).sort((a, b) => b.score - a.score)[0];
@@ -470,7 +500,7 @@ function spielerGruppen(w) {
 }
 
 function bankEmpfehlung(werte, elf, max = 4) {
-  // Der einzige Torwart des Kaders steht in der Startelf. Die Bank besteht nur aus Feldspielern.
+  // Der einzige Torwart des Kaders steht in der Startelf. Die Bank besteht aus fünf Feldspielern.
   const rest = werte.filter((w) => w.imKader && w.haupt !== "TW" && !elf.includes(w.name));
   const gewählt = [];
   const ziel = ["DEF", "MID", "ATT"];
@@ -625,6 +655,12 @@ function Training({ d, save }) {
     setAkt(trainings[0]?.id || null);
   };
 
+  const terminBearbeiten = () => {
+    if (!termin) return;
+    const datum = prompt("Trainingsdatum bearbeiten (JJJJ-MM-TT)", termin.datum);
+    if (datum === null || !/^\d{4}-\d{2}-\d{2}$/.test(datum)) return;
+    save({ ...d, trainings: d.trainings.map(t => t.id === termin.id ? { ...t, datum } : t) }, `Training vom ${termin.datum} auf ${datum} verschoben`);
+  };
   const neuerTermin = () => {
     const datum = prompt("Datum des Trainings (JJJJ-MM-TT)", heute());
     if (!datum || !/^\d{4}-\d{2}-\d{2}$/.test(datum)) return;
@@ -652,7 +688,8 @@ function Training({ d, save }) {
           </button>
         ))}
       </div>
-      {termin && <div className="px-4 pb-3 flex justify-end">
+      {termin && <div className="px-4 pb-3 flex justify-end gap-2">
+        <button onClick={terminBearbeiten} className="text-xs font-bold px-3 py-2 rounded-lg" style={{color:C.tinte,border:`1px solid ${C.linie}`}}>Datum bearbeiten</button>
         <button onClick={terminLoeschen} className="text-xs font-bold px-3 py-2 rounded-lg" style={{color:C.warn,border:`1px solid ${C.warn}`}}>Training löschen</button>
       </div>}
       <div className="px-4 pb-2 text-sm" style={{ color: C.grau }}>
@@ -681,8 +718,8 @@ function Training({ d, save }) {
 
 /* ---------------------------------------------------------------- Noten */
 function Noten({ d, save, session }) {
-  const gespielt = [...d.spiele].sort((a, b) => (b.datum || "").localeCompare(a.datum || "") || b.nr - a.nr);
-  const [nr, setNr] = useState((gespielt.find((s) => s.datum && s.datum <= heute()) || gespielt[0]).nr);
+  const gespielt = [...d.spiele].filter(istLigaSpiel).sort((a, b) => (b.datum || "").localeCompare(a.datum || "") || b.nr - a.nr);
+  const [nr, setNr] = useState((gespielt.find((s) => s.datum && s.datum <= heute()) || gespielt[0] || {}).nr);
   const spiel = d.spiele.find((s) => s.nr === nr);
   const uid = session?.user?.id || "trainer";
   const email = session?.user?.email || "Trainer";
@@ -923,6 +960,15 @@ function SpielDetails({ d, save, sp }) {
     }, `Spielstatistik ${name} gegen ${sp.gegner} geändert`);
   };
 
+  const setMinuten = (name, eingabe) => {
+    const raw = String(eingabe).trim();
+    if (raw && (!/^\d+$/.test(raw) || Number(raw) > 130)) return;
+    const aktuell = d.spielberichte?.[key] || { text: "", kommentar: "", stats: {} };
+    const alt = aktuell.stats?.[name] || {};
+    const stats = { ...(aktuell.stats || {}), [name]: { ...alt, minuten: raw === "" ? null : Number(raw) } };
+    save({ ...d, spielberichte: { ...d.spielberichte, [key]: { ...aktuell, stats } } }, `Spielminuten für ${name} gespeichert`);
+  };
+
   return <div className="mt-3 rounded-xl overflow-hidden" style={{ background: C.papier, border: `1px solid ${C.linie}` }}>
     <div className="p-3">
       <div className="font-black text-base mb-1">Trainer-Kommentar</div>
@@ -945,6 +991,12 @@ function SpielDetails({ d, save, sp }) {
       const st = bericht.stats?.[s.name] || {};
       return <div key={s.name} className="px-3 py-3" style={{ borderTop: `1px solid ${C.linie}`, background: "#fff" }}>
         <div className="font-black text-base mb-2">{s.name}</div>
+        <label className="flex items-center gap-3 text-sm font-bold mb-3">Gespielte Minuten
+          <input aria-label={`Minuten ${s.name}`} type="number" inputMode="numeric" min="0" max="130"
+            key={`${sp.nr}-${s.name}`} defaultValue={st.minuten ?? ""}
+            onBlur={e => setMinuten(s.name, e.target.value)}
+            className="w-24 p-2 rounded-lg" style={{border:`1px solid ${C.linie}`}} placeholder="–" />
+        </label>
         <div className="grid grid-cols-2 gap-3">
           {[["⚽ Tore", "tore"], ["A Assists", "vorlagen"]].map(([lab, f]) =>
             <div key={f} className="flex items-center justify-between gap-2 rounded-lg p-2" style={{ background: C.papier, border: `1px solid ${C.linie}` }}>
@@ -964,6 +1016,7 @@ function SpielDetails({ d, save, sp }) {
 
 function Spielplan({ d, save }) {
   const [offen, setOffen] = useState(null);
+  const [spielFilter, setSpielFilter] = useState("alle");
   const neuesSpiel = () => {
     const gegner = prompt("Gegner");
     if (!gegner?.trim()) return;
@@ -1003,30 +1056,52 @@ function Spielplan({ d, save }) {
     save({ ...d, spiele });
   };
 
-  const gespielt = d.spiele.filter((s) => s.tf != null && s.tg != null);
+  const spielBearbeiten = (s) => {
+    const gegner = prompt("Gegner bearbeiten", s.gegner);
+    if (gegner === null || !gegner.trim()) return;
+    const datum = prompt("Datum (JJJJ-MM-TT)", s.datum || "");
+    if (datum === null || (datum && !/^\d{4}-\d{2}-\d{2}$/.test(datum))) return;
+    const zeit = prompt("Uhrzeit (HH:MM)", s.zeit || "");
+    if (zeit === null || (zeit && !/^\d{2}:\d{2}$/.test(zeit))) return;
+    const wb = prompt("Wettbewerb: Kreisliga C oder Freundschaft", s.wb || "Kreisliga C");
+    if (wb === null || !wb.trim()) return;
+    const ha = prompt("Heim (H) oder Auswärts (A)", s.ha || "H");
+    if (ha === null || !["H", "A", ""].includes(ha.toUpperCase().trim())) return;
+    const spiele = d.spiele.map(x => x.nr === s.nr ? { ...x, gegner: gegner.trim(), datum, zeit, wb: wb.trim(), ha: ha.toUpperCase().trim() } : x);
+    save({ ...d, spiele }, `Spiel gegen ${s.gegner} bearbeitet`);
+  };
+  const gespielt = d.spiele.filter((s) => istLigaSpiel(s) && s.tf != null && s.tg != null);
   const tore = gespielt.reduce((sum, s) => sum + (s.tf || 0), 0);
   const gegentore = gespielt.reduce((sum, s) => sum + (s.tg || 0), 0);
   const siege = gespielt.filter((s) => s.tf > s.tg).length;
   const remis = gespielt.filter((s) => s.tf === s.tg).length;
   const niederlagen = gespielt.filter((s) => s.tf < s.tg).length;
   const torjaegerMap = {};
-  Object.values(d.spielberichte || {}).forEach((b) => {
+  d.spiele.filter(istLigaSpiel).forEach((sp) => {
+    const b = d.spielberichte?.["g" + sp.nr];
     Object.entries(b?.stats || {}).forEach(([name, st]) => {
-      torjaegerMap[name] = (torjaegerMap[name] || 0) + (st?.tore || 0);
+      if (!torjaegerMap[name]) torjaegerMap[name] = { name, tore: 0, assists: 0, minuten: 0, vollstaendigeMinuten: true };
+      const zeile = torjaegerMap[name];
+      zeile.tore += Number(st?.tore || 0);
+      zeile.assists += Number(st?.vorlagen || 0);
+      if (st?.minuten == null || st?.minuten === "" || !Number.isFinite(Number(st.minuten))) {
+        zeile.vollstaendigeMinuten = false;
+      } else zeile.minuten += Number(st.minuten);
     });
   });
-  const torjaeger = Object.entries(torjaegerMap).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]);
+  const torjaeger = Object.values(torjaegerMap).filter(w => w.tore > 0 || w.assists > 0)
+    .sort((a, b) => b.tore - a.tore || b.assists - a.assists || a.name.localeCompare(b.name, "de"));
 
   return (
     <div className="pb-24">
       <Kopf titel="Spielplan" rechts={<button onClick={neuesSpiel} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{background:C.rot,color:'#fff'}}>+ Spiel</button>} />
       <div className="px-4 pb-3 text-sm" style={{ color: C.grau }}>
-        Kreisliga C2 Kreis Herne · Saison 26/27
+        Kreisliga C2 Kreis Herne · Saison 26/27 · <a href="https://www.fussball.de/mannschaft/firtinaspor-herne-iii-firtinaspor-wanne-westfalen/-/saison/2627/team-id/01SCM27CGG000000VS548985VTSAFDL4#!/" target="_blank" rel="noopener noreferrer" className="underline font-bold">Fussball.de ↗</a>
       </div>
 
       <div className="px-4 pb-4">
         <div className="rounded-xl p-3" style={{ background: "#fff", border: `1px solid ${C.linie}` }}>
-          <div className="font-black mb-3">Saisonstatistik</div>
+          <div className="font-black mb-3">Liga-Saisonstatistik (ohne Freundschaftsspiele)</div>
           <div className="grid grid-cols-4 gap-2 text-center">
             <div><div className="text-xl font-black">{gespielt.length}</div><div className="text-xs" style={{ color: C.grau }}>Spiele</div></div>
             <div><div className="text-xl font-black" style={{ color: C.rasen }}>{tore}</div><div className="text-xs" style={{ color: C.grau }}>Tore</div></div>
@@ -1034,19 +1109,28 @@ function Spielplan({ d, save }) {
             <div><div className="text-xl font-black">{tore - gegentore > 0 ? "+" : ""}{tore - gegentore}</div><div className="text-xs" style={{ color: C.grau }}>Differenz</div></div>
           </div>
           <div className="text-xs mt-3" style={{ color: C.grau }}>{siege} Siege · {remis} Remis · {niederlagen} Niederlagen</div>
-          {torjaeger.length > 0 && <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${C.linie}` }}>
-            <div className="text-xs font-black mb-2">Torjäger</div>
-            <div className="flex gap-2 overflow-x-auto pb-1">
-              {torjaeger.slice(0, 6).map(([name, n], i) => <div key={name} className="shrink-0 px-3 py-2 rounded-lg text-xs" style={{ background: i === 0 ? "#FBF0D2" : C.papier }}>
-                <span className="font-black">{name}</span> · {n} ⚽
-              </div>)}
-            </div>
-          </div>}
+          <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${C.linie}` }}>
+            <div className="text-sm font-black mb-2">Torjägerliste · nur Liga</div>
+            <div className="text-xs mb-2" style={{color:C.grau}}>Tore und Vorlagen aus den Spielberichten. Minuten pro Tor nur, wenn bei allen relevanten Einträgen Minuten erfasst sind.</div>
+            {torjaeger.length === 0 ? <div className="text-sm" style={{color:C.grau}}>Noch keine Liga-Tore oder Vorlagen eingetragen.</div> :
+              <div className="overflow-x-auto"><table className="w-full text-sm" style={{borderCollapse:"collapse"}}>
+                <thead><tr style={{color:C.grau}}><th className="text-left py-2">#</th><th className="text-left py-2">Spieler</th><th className="text-right py-2">Tore</th><th className="text-right py-2">Assists</th><th className="text-right py-2">Min/Tor</th></tr></thead>
+                <tbody>{torjaeger.map((w, i) => <tr key={w.name} style={{borderTop:`1px solid ${C.linie}`}}>
+                  <td className="py-2 font-bold">{i+1}.</td><td className="py-2 font-bold">{w.name}</td>
+                  <td className="py-2 text-right font-black">{w.tore}</td><td className="py-2 text-right">{w.assists}</td>
+                  <td className="py-2 text-right">{w.tore > 0 && w.vollstaendigeMinuten ? (w.minuten / w.tore).toFixed(1).replace(".", ",") : "–"}</td>
+                </tr>)}</tbody>
+              </table></div>}
+          </div>
         </div>
       </div>
 
+      <div className="px-4 pb-3 flex gap-2">
+        <button onClick={() => setSpielFilter("alle")} className="px-3 py-2 rounded-lg text-sm font-bold" style={{background:spielFilter==="alle"?C.rot:C.papier,color:spielFilter==="alle"?"#fff":C.tinte}}>Alle Spiele (mit Freundschaftsspielen)</button>
+        <button onClick={() => setSpielFilter("liga")} className="px-3 py-2 rounded-lg text-sm font-bold" style={{background:spielFilter==="liga"?C.rot:C.papier,color:spielFilter==="liga"?"#fff":C.tinte}}>Nur Liga</button>
+      </div>
       <div style={{ borderTop: `1px solid ${C.linie}` }}>
-        {[...d.spiele].sort((a,b)=>(a.datum||"9999-99-99").localeCompare(b.datum||"9999-99-99") || a.nr-b.nr).map((s) => {
+        {[...d.spiele].filter(spielFilter === "liga" ? istLigaSpiel : () => true).sort((a,b)=>(a.datum||"9999-99-99").localeCompare(b.datum||"9999-99-99") || a.nr-b.nr).map((s) => {
           const hatInhalt = !!(d.spielberichte?.["g" + s.nr]?.kommentar || Object.values(d.spielberichte?.["g" + s.nr]?.stats || {}).some((st) => (st?.tore || 0) > 0 || (st?.vorlagen || 0) > 0));
           return <div key={s.nr} className="px-4 py-3" style={{ borderBottom: `1px solid ${C.linie}` }}>
             <div className="flex items-center gap-3">
@@ -1078,6 +1162,7 @@ function Spielplan({ d, save }) {
             <button onClick={() => setOffen(offen === s.nr ? null : s.nr)} className="mt-2 text-xs font-bold px-3 py-1.5 rounded-lg" style={{ background: offen === s.nr ? C.rot : C.papier, color: offen === s.nr ? "#fff" : C.tinte, border: `1px solid ${offen === s.nr ? C.rot : C.linie}` }}>
               {offen === s.nr ? "Details schließen" : hatInhalt ? "Kommentar / Tore bearbeiten" : "Kommentar / Tore hinzufügen"}
             </button>
+            <button onClick={() => spielBearbeiten(s)} className="ml-2 mt-2 text-xs font-bold px-3 py-1.5 rounded-lg" style={{color:C.tinte,border:`1px solid ${C.linie}`}}>Spiel bearbeiten</button>
             <button onClick={() => spielLoeschen(s)} className="ml-2 mt-2 text-xs font-bold px-3 py-1.5 rounded-lg" style={{color:C.warn,border:`1px solid ${C.warn}`}}>Spiel löschen</button>
             {offen === s.nr && <SpielDetails d={d} save={save} sp={s} />}
           </div>;
@@ -1208,7 +1293,7 @@ function Aufstellung({ d, save, berechnet }) {
     setOffen(null);
   };
 
-  const bank = bankEmpfehlung(berechnet.werte, elf, 4);
+  const bank = bankEmpfehlung(berechnet.werte, elf, 5);
   const reserve = reserveEmpfehlung(berechnet.werte, elf, bank);
 
   return (
@@ -1273,7 +1358,7 @@ function Aufstellung({ d, save, berechnet }) {
       </div>
 
       <div className="px-4 pt-5 pb-2">
-        <div className="text-sm font-black">Bank-Empfehlung · 4 Spieler</div>
+        <div className="text-sm font-black">Bank-Empfehlung · 5 Spieler</div>
         <div className="text-xs mt-1" style={{color:C.grau}}>Bewusst ausgeglichen: nur Feldspieler – möglichst Defensive, Mittelfeld und Offensive mehrfach abgedeckt.</div>
         <div className="text-xs mt-1" style={{color:C.grau}}>Automatik berücksichtigt Gesamtscore, letzte 5 Spiele, Positionsstärke und Momentum. Bei weniger als 5 Spielnoten wird die Form vorsichtiger gewichtet.</div>
       </div>
@@ -1297,13 +1382,13 @@ function Aufstellung({ d, save, berechnet }) {
       </div>
 
       <div className="px-4 pt-5 pb-2">
-        <div className="text-sm font-black">16. Mann · Reserve</div>
-        <div className="text-xs mt-1" style={{color:C.grau}}>Erste Nachrück-Option, passend zur Abdeckung der vier Bankspieler.</div>
+        <div className="text-sm font-black">17. Mann · Reserve</div>
+        <div className="text-xs mt-1" style={{color:C.grau}}>Erste Nachrück-Option, passend zur Abdeckung der fünf Bankspieler.</div>
       </div>
       <div style={{ borderTop: `1px solid ${C.linie}`, borderBottom: `1px solid ${C.linie}` }}>
         {reserve ? (
           <Zeile>
-            <span className="text-xs font-black w-5" style={{color:'#8A6D1F'}}>16.</span>
+            <span className="text-xs font-black w-5" style={{color:'#8A6D1F'}}>17.</span>
             <div className="flex-1 min-w-0">
               <div className="font-black truncate">{reserve.name}</div>
               <div className="text-xs" style={{color:C.grau}}>{reserve.reserveGrund} · Wichtigkeit {reserve.reserveWichtigkeit}</div>
@@ -1386,8 +1471,9 @@ function Spielerprofile({ d, save, berechnet }) {
   const w = berechnet.werte.find((x)=>x.name===name) || berechnet.werte[0];
   if (!w) return null;
   const ms = meilensteine(w,d);
+  const minuteStat = minutenKennzahlen(d, w.name);
   const kurve=(w.werte||[]).slice(-10);
-  const entries = d.spiele.map(sp=>({sp, trainer:trainerEintraege(d,sp.nr,w.name), avg:spielNote(d,sp.nr,w.name)})).filter(x=>x.avg!=null).slice(-8).reverse();
+  const entries = d.spiele.filter(istLigaSpiel).map(sp=>({sp, trainer:trainerEintraege(d,sp.nr,w.name), avg:spielNote(d,sp.nr,w.name)})).filter(x=>x.avg!=null).slice(-8).reverse();
   return <div className="pb-24">
     <Kopf titel="Spielerprofil" rechts={<button onClick={() => {
       const selected = d.spieler.find(s => s.name === w.name);
@@ -1411,6 +1497,10 @@ function Spielerprofile({ d, save, berechnet }) {
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>Training seit {w.dabeiSeit ? fmtDatum(w.dabeiSeit) : 'Eintritt'} · {fmtProz(w.quote)}</span>
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#FBF0D2',color:'#8A6D1F'}}>Momentum {fmtNote(w.momentum)}</span>
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:w.trend>.25?C.rasenHell:w.trend<-.25?'#FAE3E0':'#F0E9E5',color:w.trend>.25?C.rasen:w.trend<-.25?C.warn:C.grau}}>Form {w.trend>.25?'↑':w.trend<-.25?'↓':'→'}</span>
+          <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>Spielminuten: {minuteStat.spieleMitMinuten ? minuteStat.minuten : '–'}</span>
+          <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>Min./Tor: {minuteStat.minuten > 0 && minuteStat.tore > 0 ? (minuteStat.minuten / minuteStat.tore).toFixed(1).replace('.', ',') : '–'}</span>
+          <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>Tore/90: {minuteStat.minuten > 0 ? (90 * minuteStat.tore / minuteStat.minuten).toFixed(2).replace('.', ',') : '–'}</span>
+          <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>Assists/90: {minuteStat.minuten > 0 ? (90 * minuteStat.assists / minuteStat.minuten).toFixed(2).replace('.', ',') : '–'}</span>
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>⚽ {w.tore || 0}</span>
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:'#F0E9E5'}}>A {w.assists || 0}</span>
           <span className="text-xs font-bold px-2 py-1 rounded" style={{background:w.einsaetze>=5?'#E8F4EA':'#FFF3D6',color:w.einsaetze>=5?C.rasen:'#8A6D1F'}}>{w.datenstatus}</span>
@@ -1752,9 +1842,6 @@ function HauptApp({ session }) {
               {status === "speichert" ? "speichert …" : status === "fehler" ? "Speicherfehler" : "lokal gespeichert"}
             </div>
             <InstallAppButton />
-            <button onClick={() => { if (confirm("Offline-Testdaten wirklich zurücksetzen?")) { localStorage.removeItem("firtinaspor-v5-export-2026-10-12"); location.reload(); } }} className="text-xs font-bold px-2 py-1 rounded" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>
-              Test reset
-            </button>
           </div>
         </div>
       </div>

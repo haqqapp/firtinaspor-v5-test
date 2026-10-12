@@ -1,1 +1,4715 @@
-{"spieler":[{"name":"Ahmad","haupt":"TW","neben":["IV","DM"],"posStaerke":{"DM":50,"IV":30,"TW":95},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-09-08","aktivBis":"","aktiv":true},{"name":"Anıl","haupt":"MS","neben":[],"posStaerke":{"MS":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-09-13","aktivBis":"","aktiv":true},{"name":"Atilla","haupt":"ZM","neben":["DM","RM","LM"],"posStaerke":{"DM":100,"LM":80,"RM":80,"ZM":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-09-27","aktivBis":"","aktiv":true},{"name":"Ayhan","haupt":"TW","neben":[],"posStaerke":{"TW":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Burak","haupt":"ZM","neben":["MS"],"posStaerke":{"MS":70,"ZM":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Cem","haupt":"DM","neben":["MS","RM","LM"],"posStaerke":{"DM":70,"LM":70,"MS":70,"RM":70},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-09-27","aktivBis":"","aktiv":true},{"name":"Cemil","haupt":"LV","neben":["LM"],"posStaerke":{"LM":70,"LV":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Dawin","haupt":"RV","neben":["RM"],"posStaerke":{"RM":100,"RV":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Emre","haupt":"IV","neben":["DM"],"posStaerke":{"DM":100,"IV":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Ercan","haupt":"MS","neben":["OM"],"posStaerke":{"MS":100,"OM":50},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Fabian","haupt":"RM","neben":["MS","LM"],"posStaerke":{"LM":70,"MS":70,"RM":70},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Fatih","haupt":"LV","neben":["LM"],"posStaerke":{"LM":100,"LV":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Gökhan","haupt":"MS","neben":["RM","LM","ZM","OM","DM"],"posStaerke":{"DM":80,"LM":80,"MS":80,"OM":80,"RM":80,"ZM":80},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Göktan","haupt":"IV","neben":["DM","MS","ZM"],"posStaerke":{"DM":70,"IV":100,"MS":30,"ZM":40},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Konate","haupt":"LM","neben":["MS","RM","OM"],"posStaerke":{"LM":100,"MS":70,"OM":70,"RM":70},"sperre":2,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Marcel","haupt":"LV","neben":["RV","IV"],"posStaerke":{"IV":100,"LV":100,"RV":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Max","haupt":"ZM","neben":["DM","LM"],"posStaerke":{"DM":70,"LM":70,"ZM":70},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Mevlüt","haupt":"DM","neben":["RV","LV"],"posStaerke":{"DM":70,"LV":70,"RV":70},"sperre":5,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-09","aktivBis":"","aktiv":true},{"name":"Muharrem","haupt":"IV","neben":["LV","RV"],"posStaerke":{"IV":100,"LV":70,"RV":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Nail Cem","haupt":"DM","neben":["MS","LM","RM","RV","IV","LV"],"posStaerke":{"DM":70,"IV":70,"LM":70,"LV":70,"MS":70,"RM":70,"RV":70},"sperre":3,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-09-01","aktivBis":"","aktiv":true},{"name":"Nesat","haupt":"TW","neben":[],"posStaerke":{"TW":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Okan","haupt":"RM","neben":["LM"],"posStaerke":{"LM":100,"RM":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Ridvan","haupt":"IV","neben":["LM","RM"],"posStaerke":{"IV":80,"LM":100,"RM":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Sait","haupt":"DM","neben":["ZM","IV","OM"],"posStaerke":{"DM":100,"IV":100,"OM":70,"ZM":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Selçuk","haupt":"OM","neben":["ZM","DM"],"posStaerke":{"DM":70,"OM":100,"ZM":70},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Serdar","haupt":"ZM","neben":["DM","OM"],"posStaerke":{"DM":100,"OM":70,"ZM":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Stephan","haupt":"LM","neben":["RM"],"posStaerke":{"LM":100,"RM":75},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Timur","haupt":"DM","neben":["IV"],"posStaerke":{"DM":100,"IV":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Tobias","haupt":"RV","neben":["DM","ZM","LV"],"posStaerke":{"DM":100,"LV":100,"RV":100,"ZM":100},"sperre":0,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Tolga","haupt":"ZM","neben":["DM","RM"],"posStaerke":{"DM":70,"RM":50,"ZM":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Tugay","haupt":"MS","neben":["RM","LM"],"posStaerke":{"LM":100,"MS":100,"RM":100},"sperre":6,"verfuegbar":false,"fix":false,"dabeiSeit":"2026-07-01","aktivBis":"","aktiv":true},{"name":"Yassin","haupt":"IV","neben":["DM"],"posStaerke":{"DM":55,"IV":100},"sperre":0,"verfuegbar":true,"fix":false,"dabeiSeit":"2026-09-08","aktivBis":"","aktiv":true}],"trainings":[{"id":"t1","datum":"2026-07-07"},{"id":"t2","datum":"2026-07-09"},{"id":"t3","datum":"2026-07-14"},{"id":"t4","datum":"2026-07-21"},{"id":"t5","datum":"2026-07-23"},{"id":"t6","datum":"2026-08-04"},{"id":"t7","datum":"2026-08-11"},{"id":"t8","datum":"2026-08-18"},{"id":"t9","datum":"2026-08-20"},{"id":"t10","datum":"2026-08-25"},{"id":"t11","datum":"2026-08-27"},{"id":"t12","datum":"2026-09-01"},{"id":"t13","datum":"2026-09-03"},{"id":"t14","datum":"2026-09-08"},{"id":"t15","datum":"2026-09-10"},{"id":"t16","datum":"2026-09-15"},{"id":"t92009","datum":"2026-09-17"},{"id":"t104553","datum":"2026-09-22"},{"id":"t113952","datum":"2026-09-24"},{"id":"t123171","datum":"2026-09-29"},{"id":"t131350","datum":"2026-10-01"},{"id":"t321688","datum":"2026-10-06"},{"id":"t325279","datum":"2026-10-08"},{"id":"t331773","datum":"2026-10-13"},{"id":"t336713","datum":"2026-10-15"},{"id":"t356369","datum":"2026-10-19"},{"id":"t343209","datum":"2026-10-20"},{"id":"t346785","datum":"2026-10-22"},{"id":"t352271","datum":"2026-10-27"},{"id":"t388010","datum":"2026-10-29"}],"anwesend":{"t1":["Ayhan","Cemil","Dawin","Emre","Ercan","Fabian","Fatih","Gökhan","Marcel","Ridvan","Selçuk","Serdar","Timur","Tobias","Tolga","Tugay"],"t2":["Cemil","Dawin","Fabian","Göktan","Ridvan","Selçuk","Serdar","Tolga","Tugay"],"t3":["Ayhan","Cemil","Emre","Tolga"],"t4":["Cemil","Dawin","Fabian","Göktan","Max","Okan","Selçuk","Tolga"],"t5":["Ayhan","Cemil","Okan","Selçuk","Timur"],"t6":["Ayhan","Cemil","Dawin","Fabian","Max","Selçuk","Serdar","Tolga"],"t7":["Ayhan","Cemil","Dawin","Sait","Selçuk","Serdar","Tobias","Tolga"],"t8":["Cemil","Dawin","Ercan","Max","Okan","Selçuk","Serdar","Tobias"],"t9":["Ayhan","Cemil","Dawin","Ercan","Marcel","Max","Muharrem","Okan","Selçuk","Serdar","Tobias"],"t10":["Ayhan","Dawin","Fabian","Fatih","Göktan","Max","Okan","Sait","Selçuk","Serdar","Timur","Tobias"],"t11":["Ercan","Fatih","Max","Okan","Selçuk","Serdar","Timur"],"t12":["Cemil","Dawin","Emre","Fabian","Göktan","Max","Nail Cem","Okan","Serdar","Tobias","Tolga"],"t13":["Cemil","Emre","Okan","Selçuk","Serdar","Tolga"],"t14":["Ahmad","Ayhan","Cemil","Emre","Okan","Selçuk","Serdar","Timur","Tolga","Yassin"],"t15":["Ahmad","Ayhan","Mevlüt","Okan","Selçuk","Tobias","Tolga","Yassin"],"t16":["Ahmad","Anıl","Ayhan","Dawin","Emre","Ercan","Fabian","Fatih","Max","Nail Cem","Okan","Selçuk","Serdar","Timur","Tobias","Yassin"],"t92009":["Ahmad","Anıl","Ayhan","Dawin","Ercan","Max","Nail Cem","Okan","Selçuk","Serdar","Tugay","Yassin"],"t104553":["Ahmad","Anıl","Dawin","Ercan","Max","Nail Cem","Okan","Selçuk","Serdar","Timur","Yassin"],"t113952":["Ahmad","Ayhan","Max","Nail Cem","Okan","Selçuk","Yassin"],"t123171":["Ahmad","Atilla","Ayhan","Cem","Nail Cem","Okan","Selçuk","Serdar","Timur","Tolga","Yassin"],"t131350":["Ahmad","Anıl","Atilla","Ayhan","Cem","Dawin","Fatih","Nail Cem","Okan","Selçuk","Serdar","Timur","Tolga","Yassin"],"t321688":["Ahmad","Anıl","Atilla","Ayhan","Cem","Fatih","Nail Cem","Okan","Selçuk","Serdar","Timur","Tolga","Yassin"],"t325279":["Ahmad","Anıl","Atilla","Ayhan","Cem","Fatih","Nail Cem","Okan","Sait","Selçuk","Serdar","Timur","Tolga","Yassin"],"t331773":[],"t336713":[],"t356369":[],"t343209":[],"t346785":[],"t352271":[],"t388010":[]},"spiele":[{"nr":1,"datum":"2026-07-12","zeit":"11:00","gegner":"TGD Essen-West 4","ha":"","wb":"Freundschaft","tf":5,"tg":6},{"nr":2,"datum":"2026-07-19","zeit":"13:00","gegner":"RWT Herne 79/09 II","ha":"","wb":"Freundschaft","tf":2,"tg":5},{"nr":3,"datum":"2026-07-26","zeit":"13:00","gegner":"OB HL","ha":"","wb":"Freundschaft","tf":3,"tg":7},{"nr":4,"datum":"2026-08-02","zeit":"17:00","gegner":"Ugarit FC","ha":"","wb":"Freundschaft","tf":0,"tg":10},{"nr":8,"datum":"2026-08-16","zeit":"","gegner":"SF Stuckenbusch-Hochlarmark","ha":"","wb":"Freundschaft","tf":0,"tg":0},{"nr":5,"datum":"2026-08-23","zeit":"15:00","gegner":"FC Herne 57","ha":"A","wb":"Kreisliga C","tf":5,"tg":4},{"nr":6,"datum":"2026-08-30","zeit":"17:00","gegner":"Zonguldakspor Bickern II","ha":"H","wb":"Kreisliga C","tf":8,"tg":1},{"nr":7,"datum":"2026-09-06","zeit":"11:00","gegner":"SC Constantin Herne II","ha":"A","wb":"Kreisliga C","tf":6,"tg":3},{"nr":9,"datum":"2026-09-27","zeit":"17:00","gegner":"VfB Börnig III","ha":"H","wb":"Kreisliga C","tf":4,"tg":6},{"nr":10,"datum":"2026-10-04","zeit":"13:00","gegner":"SpVgg. Röhlinghausen III","ha":"A","wb":"Kreisliga C","tf":3,"tg":3},{"nr":11,"datum":"2026-10-11","zeit":"13:00","gegner":"ESV Herne III","ha":"H","wb":"Kreisliga C","tf":2,"tg":1},{"nr":19,"datum":"2026-10-11","zeit":"13:00","gegner":"Spiel-Club Röhlinghausen","ha":"","wb":"Freundschaft","tf":null,"tg":null},{"nr":20,"datum":"2026-10-11","zeit":"13:00","gegner":"Spiel-Club Röhlinghausen","ha":"H","wb":"Kreisliga C","tf":2,"tg":1},{"nr":12,"datum":"2026-10-18","zeit":"13:00","gegner":"RSV Wanne II","ha":"A","wb":"Kreisliga C","tf":null,"tg":null},{"nr":13,"datum":"2026-10-25","zeit":"19:00","gegner":"Spvg. Arminia Holsterhausen II","ha":"H","wb":"Kreisliga C","tf":null,"tg":null},{"nr":14,"datum":"2026-11-08","zeit":"15:00","gegner":"DJK Wanne-Eickel 88 II","ha":"A","wb":"Kreisliga C","tf":null,"tg":null},{"nr":15,"datum":"2026-11-15","zeit":"17:00","gegner":"ASC Leone III","ha":"A","wb":"Kreisliga C","tf":null,"tg":null},{"nr":16,"datum":"2026-11-29","zeit":"17:00","gegner":"Eintracht Ickern III","ha":"H","wb":"Kreisliga C","tf":null,"tg":null},{"nr":17,"datum":"2026-12-06","zeit":"17:00","gegner":"Spiel-Club Röhlinghausen","ha":"H","wb":"Kreisliga C","tf":null,"tg":null},{"nr":18,"datum":"2026-12-13","zeit":"13:00","gegner":"Blau Weiß Börnig II","ha":"A","wb":"Kreisliga C","tf":null,"tg":null}],"noten":{"g1":{"Ayhan":7.5,"Cemil":6.5,"Dawin":7.5,"Emre":7.0,"Ercan":7.5,"Fabian":4.0,"Göktan":7.0,"Konate":7.0,"Max":6.5,"Ridvan":8.0,"Timur":6.0,"Tolga":7.5,"Tugay":7.5},"g2":{"Ayhan":8.0,"Cemil":7.25,"Dawin":7.25,"Emre":6.0,"Ercan":6.25,"Fabian":5.5,"Göktan":6.25,"Konate":7.75,"Max":7.25,"Ridvan":6.0,"Sait":8.5,"Selçuk":7.25,"Timur":6.5,"Tolga":7.25},"g3":{"Ayhan":8.0,"Cemil":8.0,"Dawin":8.5,"Göktan":6.0,"Konate":8.0,"Marcel":8.0,"Max":7.5,"Okan":6.5,"Selçuk":7.5,"Timur":7.0},"g4":{"Ayhan":6.0,"Cemil":8.0,"Dawin":8.0,"Fabian":5.0,"Gökhan":6.0,"Konate":8.5,"Marcel":6.0,"Max":6.0,"Serdar":8.5,"Timur":6.0,"Tobias":6.5,"Tolga":7.5},"g5":{"Ayhan":8.25,"Cemil":8.0,"Dawin":7.5,"Ercan":7.75,"Fabian":4.5,"Göktan":6.75,"Marcel":8.0,"Max":7.25,"Sait":8.0,"Selçuk":7.5,"Serdar":7.75,"Stephan":9.0,"Tobias":6.0,"Tugay":8.0},"g6":{"Burak":7.5,"Dawin":8.0,"Emre":7.0,"Ercan":8.0,"Fatih":9.0,"Göktan":8.0,"Marcel":8.0,"Max":7.5,"Okan":6.5,"Sait":9.0,"Selçuk":8.5,"Serdar":9.0,"Stephan":10.0,"Timur":7.0,"Tobias":8.0,"Tolga":7.0},"g7":{"Cemil":6.5,"Emre":7.0,"Ercan":9.0,"Fatih":8.0,"Marcel":8.0,"Okan":6.0,"Ridvan":7.5,"Selçuk":7.5,"Serdar":8.0,"Stephan":8.0,"Timur":6.0,"Tobias":8.0,"Tolga":7.0,"Tugay":8.0},"g9":{"Dawin":7.0,"Emre":6.375,"Ercan":7.5,"Fatih":6.875,"Göktan":5.75,"Marcel":5.75,"Max":6.125,"Okan":6.25,"Sait":7.5,"Selçuk":6.625,"Serdar":6.75,"Timur":6.0,"Tolga":6.375,"Yassin":6.875},"g10":{"Atilla":8.0,"Cemil":7.5,"Dawin":7.0,"Emre":6.75,"Ercan":6.875,"Fatih":7.0,"Marcel":7.0,"Max":7.0,"Okan":6.625,"Selçuk":8.125,"Serdar":8.625,"Timur":7.0,"Tobias":7.75,"Tolga":6.75,"Yassin":6.75},"g20":{"Atilla":7.75,"Dawin":7.5,"Emre":7.25,"Ercan":7.875,"Fatih":8.0,"Göktan":8.0,"Max":7.375,"Okan":6.625,"Sait":9.625,"Selçuk":8.25,"Serdar":8.0,"Tolga":6.375,"Yassin":7.5}},"trainerNoten":{"g1":{"Ayhan":{"legacy":{"value":7.5,"email":"Altbestand"}},"Cemil":{"legacy":{"value":6.5,"email":"Altbestand"}},"Dawin":{"legacy":{"value":7.5,"email":"Altbestand"}},"Emre":{"legacy":{"value":7,"email":"Altbestand"}},"Ercan":{"legacy":{"value":7.5,"email":"Altbestand"}},"Fabian":{"legacy":{"value":4,"email":"Altbestand"}},"Göktan":{"legacy":{"value":7,"email":"Altbestand"}},"Konate":{"legacy":{"value":7,"email":"Altbestand"}},"Max":{"legacy":{"value":6.5,"email":"Altbestand"}},"Ridvan":{"legacy":{"value":8,"email":"Altbestand"}},"Timur":{"legacy":{"value":6,"email":"Altbestand"}},"Tolga":{"legacy":{"value":7.5,"email":"Altbestand"}},"Tugay":{"legacy":{"value":7.5,"email":"Altbestand"}}},"g2":{"Ayhan":{"legacy":{"value":8,"email":"Altbestand"}},"Cemil":{"legacy":{"value":7.25,"email":"Altbestand"}},"Dawin":{"legacy":{"value":7.25,"email":"Altbestand"}},"Emre":{"legacy":{"value":6,"email":"Altbestand"}},"Ercan":{"legacy":{"value":6.25,"email":"Altbestand"}},"Fabian":{"legacy":{"value":5.5,"email":"Altbestand"}},"Göktan":{"legacy":{"value":6.25,"email":"Altbestand"}},"Konate":{"legacy":{"value":7.75,"email":"Altbestand"}},"Max":{"legacy":{"value":7.25,"email":"Altbestand"}},"Ridvan":{"legacy":{"value":6,"email":"Altbestand"}},"Sait":{"legacy":{"value":8.5,"email":"Altbestand"}},"Selçuk":{"legacy":{"value":7.25,"email":"Altbestand"}},"Timur":{"legacy":{"value":6.5,"email":"Altbestand"}},"Tolga":{"legacy":{"value":7.25,"email":"Altbestand"}}},"g3":{"Ayhan":{"legacy":{"value":8,"email":"Altbestand"}},"Cemil":{"legacy":{"value":8,"email":"Altbestand"}},"Dawin":{"legacy":{"value":8.5,"email":"Altbestand"}},"Göktan":{"legacy":{"value":6,"email":"Altbestand"}},"Konate":{"legacy":{"value":8,"email":"Altbestand"}},"Marcel":{"legacy":{"value":8,"email":"Altbestand"}},"Max":{"legacy":{"value":7.5,"email":"Altbestand"}},"Okan":{"legacy":{"value":6.5,"email":"Altbestand"}},"Selçuk":{"legacy":{"value":7.5,"email":"Altbestand"}},"Timur":{"legacy":{"value":7,"email":"Altbestand"}}},"g4":{"Ayhan":{"legacy":{"value":6,"email":"Altbestand"}},"Cemil":{"legacy":{"value":8,"email":"Altbestand"}},"Dawin":{"legacy":{"value":8,"email":"Altbestand"}},"Fabian":{"legacy":{"value":5,"email":"Altbestand"}},"Gökhan":{"legacy":{"value":6,"email":"Altbestand"}},"Konate":{"legacy":{"value":8.5,"email":"Altbestand"}},"Marcel":{"legacy":{"value":6,"email":"Altbestand"}},"Max":{"legacy":{"value":6,"email":"Altbestand"}},"Serdar":{"legacy":{"value":8.5,"email":"Altbestand"}},"Timur":{"legacy":{"value":6,"email":"Altbestand"}},"Tobias":{"legacy":{"value":6.5,"email":"Altbestand"}},"Tolga":{"legacy":{"value":7.5,"email":"Altbestand"}}},"g5":{"Ayhan":{"legacy":{"value":8.25,"email":"Altbestand"}},"Cemil":{"legacy":{"value":8,"email":"Altbestand"}},"Dawin":{"legacy":{"value":7.5,"email":"Altbestand"}},"Ercan":{"legacy":{"value":7.75,"email":"Altbestand"}},"Fabian":{"legacy":{"value":4.5,"email":"Altbestand"}},"Göktan":{"legacy":{"value":6.75,"email":"Altbestand"}},"Marcel":{"legacy":{"value":8,"email":"Altbestand"}},"Max":{"legacy":{"value":7.25,"email":"Altbestand"}},"Sait":{"legacy":{"value":8,"email":"Altbestand"}},"Selçuk":{"legacy":{"value":7.5,"email":"Altbestand"}},"Serdar":{"legacy":{"value":7.75,"email":"Altbestand"}},"Stephan":{"legacy":{"value":9,"email":"Altbestand"}},"Tobias":{"legacy":{"value":6,"email":"Altbestand"}},"Tugay":{"legacy":{"value":8,"email":"Altbestand"}}},"g6":{"Burak":{"legacy":{"value":7.5,"email":"Altbestand"}},"Dawin":{"legacy":{"value":8,"email":"Altbestand"}},"Emre":{"legacy":{"value":7,"email":"Altbestand"}},"Ercan":{"legacy":{"value":8,"email":"Altbestand"}},"Fatih":{"legacy":{"value":9,"email":"Altbestand"}},"Göktan":{"legacy":{"value":8,"email":"Altbestand"}},"Marcel":{"legacy":{"value":8,"email":"Altbestand"}},"Max":{"legacy":{"value":7.5,"email":"Altbestand"}},"Okan":{"legacy":{"value":6.5,"email":"Altbestand"}},"Sait":{"legacy":{"value":9,"email":"Altbestand"}},"Selçuk":{"legacy":{"value":8.5,"email":"Altbestand"}},"Serdar":{"legacy":{"value":9,"email":"Altbestand"}},"Stephan":{"legacy":{"value":10,"email":"Altbestand"}},"Timur":{"legacy":{"value":7,"email":"Altbestand"}},"Tobias":{"legacy":{"value":8,"email":"Altbestand"}},"Tolga":{"legacy":{"value":7,"email":"Altbestand"}}},"g7":{"Cemil":{"legacy":{"value":6.5,"email":"Altbestand"}},"Emre":{"legacy":{"value":7,"email":"Altbestand"}},"Ercan":{"legacy":{"value":9,"email":"Altbestand"}},"Fatih":{"legacy":{"value":8,"email":"Altbestand"}},"Marcel":{"legacy":{"value":8,"email":"Altbestand"}},"Okan":{"legacy":{"value":6,"email":"Altbestand"}},"Ridvan":{"legacy":{"value":7.5,"email":"Altbestand"}},"Selçuk":{"legacy":{"value":7.5,"email":"Altbestand"}},"Serdar":{"legacy":{"value":8,"email":"Altbestand"}},"Stephan":{"legacy":{"value":8,"email":"Altbestand"}},"Timur":{"legacy":{"value":6,"email":"Altbestand"}},"Tobias":{"legacy":{"value":8,"email":"Altbestand"}},"Tolga":{"legacy":{"value":7,"email":"Altbestand"}},"Tugay":{"legacy":{"value":8,"email":"Altbestand"}}},"g9":{"Dawin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Emre":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6,"email":"kreditprufung@gmail.com"}},"Ercan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Fatih":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.25,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Göktan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":5.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":5.75,"email":"kreditprufung@gmail.com"}},"Marcel":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":5.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":5.75,"email":"kreditprufung@gmail.com"}},"Max":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":5.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.5,"email":"kreditprufung@gmail.com"}},"Okan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":5.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.75,"email":"kreditprufung@gmail.com"}},"Sait":{"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Selçuk":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.25,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Serdar":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Timur":{"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6,"email":"kreditprufung@gmail.com"}},"Tolga":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.25,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.5,"email":"kreditprufung@gmail.com"}},"Yassin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.25,"email":"kreditprufung@gmail.com"}}},"g10":{"Atilla":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Cemil":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Dawin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Emre":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.75,"email":"kreditprufung@gmail.com"}},"Ercan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Fatih":{"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Marcel":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.5,"email":"kreditprufung@gmail.com"}},"Max":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Okan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.25,"email":"kreditprufung@gmail.com"}},"Selçuk":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8.25,"email":"kreditprufung@gmail.com"}},"Serdar":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8.75,"email":"kreditprufung@gmail.com"}},"Timur":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7,"email":"kreditprufung@gmail.com"}},"Tobias":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Tolga":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.5,"email":"kreditprufung@gmail.com"}},"Yassin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.5,"email":"kreditprufung@gmail.com"}}},"g20":{"Atilla":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Dawin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Emre":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}},"Ercan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Fatih":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Göktan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8,"email":"kreditprufung@gmail.com"}},"Max":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.25,"email":"kreditprufung@gmail.com"}},"Okan":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6.75,"email":"kreditprufung@gmail.com"}},"Sait":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":9.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":9.75,"email":"kreditprufung@gmail.com"}},"Selçuk":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":8.25,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8.25,"email":"kreditprufung@gmail.com"}},"Serdar":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":8.5,"email":"kreditprufung@gmail.com"}},"Tolga":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":6.75,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":6,"email":"kreditprufung@gmail.com"}},"Yassin":{"5945bb21-b658-4e18-83a4-f73480001c3a":{"value":7.5,"email":"ayhan.tuerk88@gmail.com"},"c91f8630-e26f-481d-86ef-51af05f9e15f":{"value":7.5,"email":"kreditprufung@gmail.com"}}}},"spielPositionen":{},"spielberichte":{"g9":{"kommentar":"Grundordnung\n\nWelche Formation? Ändert sie sich mit/gegen Ball?\n\nSpielaufbau\n\nKurz hinten raus oder lange Bälle? Über welche Seite? Wird ein 6er gesucht?\n\nTorwart\n\nSpielt er mit? Wie bei Rückpässen? Gute/schlechte Füße? Abschläge wohin?\n\nInnenverteidiger\n\nWer ist schnell/langsam? Wer ist am Ball unsicher? Wie reagieren sie auf Druck?\n\nAußenverteidiger\n\nGehen sie weit mit nach vorne? Entstehen Räume hinter ihnen?\n\nPressing\n\nLaufen sie früh an oder stehen sie tief? Wer löst das Pressing aus?\n\nDefensivlinie\n\nHoch oder tief? Kompakt? Raum zwischen Abwehr und Mittelfeld?\n\nNach Ballverlust\n\nSofort Gegenpressing oder Rückzug? Wo sind sie offen?\n\nNach Ballgewinn\n\nSofort nach vorne? Langer Ball? Konter über Außen?\n\nAngriff\n\nWie kommen sie hauptsächlich vors Tor? Flanken, Zentrum, lange Bälle, Steckpässe?\n\nSchlüsselspieler\n\nWelche Nummern fallen auf? Wer macht Tempo? Wer verteilt? Wer sucht Abschlüsse?\n\nStürmer\n\nKommt er entgegen oder geht tief? Kopfballstark? Schnell? Welchen Fuß bevorzugt er?\n\nFlügel\n\nWelche Seite ist gefährlicher? Ziehen sie nach innen oder gehen zur Grundlinie?\n\nZweite Bälle\n\nWer sammelt sie ein? Wie gut rücken sie nach langen Bällen nach?\n\nEcken offensiv\n\nWer schießt? Wohin? Kurz/lang? Welche Spieler werden gesucht?\n\nEcken defensiv\n\nMann- oder Raumdeckung? Pfosten besetzt? Wo wirken sie anfällig?\n\nFreistöße\n\nWer schießt? Direkt oder Variante? Was machen sie bei Freistößen aus dem Halbfeld?\n\nMentalität\n\nVerhalten nach Gegentor/Führung? Werden sie hektisch? Viel Diskussion?\n\nWechsel\n\nWer kommt? Welche Position? Ändert sich dadurch ihre Spielweise? \n\n🔥 Die wichtigsten Sachen\n\nWenn ihr nicht alles aufschreiben wollt, beantwortet während der 90 Minuten unbedingt diese 7 Punkte:\n\n1. Wie bauen sie auf?\n→ Und vor allem: Wie können wir ihren Aufbau stören?\n\n2. Wie können wir gegen sie Chancen erzeugen?\n→ Wo ist ihre größte defensive Schwäche?\n\n3. Wie erzeugen SIE Chancen?\n→ Was müssen wir in zwei Wochen unbedingt verhindern?\n\n4. Wer sind Börnigs 3 gefährlichste Spieler?\n→ Trikotnummer + Position + Stärke notieren.\n\n5. Was passiert bei Ballverlust?\n→ Sind sie für Konter anfällig?\n\n6. Standards offensiv & defensiv?\n→ Besonders Ecken genau beobachten.\n\n7. Was wäre unser Matchplan gegen Börnig?\nAm Ende solltet ihr daraus 3 konkrete Anweisungen ableiten können.\n\nZum Beispiel: „Nr. 6 unter Druck setzen – linke Abwehrseite attackieren – nach Ballgewinn sofort hinter den hochstehenden RV spielen.“\n\nUnd ganz wichtig: Nummern statt Namen notieren. Also beispielsweise #7 sehr schnell, rechts / #10 Spielmacher / #4 IV unsicher unter Druck. Dann kannst du mir nach dem Spiel einfach eure Notizen schicken und ich mache daraus einen kompakten Gegnerbericht + Matchplan für euer Spiel gegen Börnig.","text":"","stats":{"Ercan":{"tore":3,"vorlagen":0,"gelb":0},"Fatih":{"tore":1,"vorlagen":0,"gelb":0}}},"g15":{"kommentar":"Rakip çöp","text":"","stats":{}},"g5":{"kommentar":"","text":"","stats":{"Ercan":{"tore":1,"vorlagen":0,"gelb":0},"Göktan":{"tore":1,"vorlagen":0,"gelb":0},"Sait":{"tore":1,"vorlagen":0,"gelb":0},"Stephan":{"tore":2,"vorlagen":0,"gelb":0}}},"g6":{"kommentar":"","text":"","stats":{"Burak":{"tore":2,"vorlagen":0,"gelb":0},"Selçuk":{"tore":1,"vorlagen":0,"gelb":0},"Stephan":{"tore":4,"vorlagen":0,"gelb":0},"Tolga":{"tore":1,"vorlagen":0,"gelb":0}}},"g7":{"kommentar":"","text":"","stats":{"Ercan":{"tore":4,"vorlagen":0,"gelb":0},"Stephan":{"tore":1,"vorlagen":0,"gelb":0},"Tugay":{"tore":1,"vorlagen":0,"gelb":0}}},"g10":{"kommentar":"","text":"","stats":{"Atilla":{"tore":1,"vorlagen":0,"gelb":0},"Selçuk":{"tore":1,"vorlagen":0,"gelb":0},"Tobias":{"tore":1,"vorlagen":0,"gelb":0}}},"g20":{"kommentar":"","text":"","stats":{"Ercan":{"tore":1,"vorlagen":0,"gelb":0},"Sait":{"tore":1,"vorlagen":0,"gelb":0}}}},"aenderungen":[{"id":"import-0","zeit":"2026-10-11T21:38:23Z","trainer":"kreditprufung@gmail.com","aktion":"Spielstatistik Sait gegen ESV Herne III geändert"},{"id":"import-1","zeit":"2026-10-11T21:38:20Z","trainer":"kreditprufung@gmail.com","aktion":"Spielstatistik Ercan gegen ESV Herne III geändert"},{"id":"import-2","zeit":"2026-10-11T21:38:10Z","trainer":"kreditprufung@gmail.com","aktion":"Spielstatistik Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-3","zeit":"2026-10-11T21:38:06Z","trainer":"kreditprufung@gmail.com","aktion":"Spielstatistik Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-4","zeit":"2026-10-11T21:38:01Z","trainer":"kreditprufung@gmail.com","aktion":"Spielplan geändert"},{"id":"import-5","zeit":"2026-10-11T21:38:00Z","trainer":"kreditprufung@gmail.com","aktion":"Spielplan geändert"},{"id":"import-6","zeit":"2026-10-11T19:23:43Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-7","zeit":"2026-10-11T19:23:32Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-8","zeit":"2026-10-11T19:23:21Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Max gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-9","zeit":"2026-10-11T19:23:13Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-10","zeit":"2026-10-11T19:22:58Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-11","zeit":"2026-10-11T19:22:47Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-12","zeit":"2026-10-11T19:22:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-13","zeit":"2026-10-11T19:22:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-14","zeit":"2026-10-11T19:22:45Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-15","zeit":"2026-10-11T19:22:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-16","zeit":"2026-10-11T19:22:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-17","zeit":"2026-10-11T16:15:58Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-18","zeit":"2026-10-11T16:15:58Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-19","zeit":"2026-10-11T16:15:26Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-20","zeit":"2026-10-11T16:15:26Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-21","zeit":"2026-10-11T16:15:20Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-22","zeit":"2026-10-11T16:15:15Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Spielstatistik Sait gegen ESV Herne III geändert"},{"id":"import-23","zeit":"2026-10-11T16:15:12Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-24","zeit":"2026-10-11T16:15:10Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Spielstatistik Ercan gegen ESV Herne III geändert"},{"id":"import-25","zeit":"2026-10-11T16:15:08Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-26","zeit":"2026-10-11T16:15:07Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-27","zeit":"2026-10-11T16:15:06Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-28","zeit":"2026-10-11T16:15:06Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-29","zeit":"2026-10-11T16:15:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-30","zeit":"2026-10-11T16:15:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-31","zeit":"2026-10-11T16:15:04Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-32","zeit":"2026-10-11T16:15:00Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Spielplan geändert"},{"id":"import-33","zeit":"2026-10-11T16:14:59Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Spielplan geändert"},{"id":"import-34","zeit":"2026-10-11T16:14:58Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-35","zeit":"2026-10-11T16:14:57Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-36","zeit":"2026-10-11T16:14:51Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-37","zeit":"2026-10-11T16:14:50Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-38","zeit":"2026-10-11T16:14:49Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-39","zeit":"2026-10-11T16:14:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-40","zeit":"2026-10-11T16:14:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-41","zeit":"2026-10-11T16:14:45Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-42","zeit":"2026-10-11T16:14:45Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-43","zeit":"2026-10-11T16:14:43Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-44","zeit":"2026-10-11T16:14:43Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-45","zeit":"2026-10-11T16:14:42Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-46","zeit":"2026-10-11T16:14:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-47","zeit":"2026-10-11T16:14:39Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-48","zeit":"2026-10-11T16:14:38Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-49","zeit":"2026-10-11T16:14:38Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-50","zeit":"2026-10-11T16:14:37Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-51","zeit":"2026-10-11T16:14:34Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Max gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-52","zeit":"2026-10-11T16:14:29Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-53","zeit":"2026-10-11T16:14:29Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-54","zeit":"2026-10-11T16:14:28Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-55","zeit":"2026-10-11T16:14:27Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-56","zeit":"2026-10-11T16:14:22Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-57","zeit":"2026-10-11T16:14:19Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-58","zeit":"2026-10-11T16:14:18Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-59","zeit":"2026-10-11T16:14:16Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-60","zeit":"2026-10-11T16:14:16Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-61","zeit":"2026-10-11T16:14:15Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-62","zeit":"2026-10-11T16:14:14Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-63","zeit":"2026-10-11T16:14:13Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-64","zeit":"2026-10-11T16:14:12Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-65","zeit":"2026-10-11T16:14:12Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-66","zeit":"2026-10-11T16:14:11Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-67","zeit":"2026-10-11T16:14:10Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-68","zeit":"2026-10-11T16:14:10Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-69","zeit":"2026-10-11T16:14:09Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-70","zeit":"2026-10-11T16:14:09Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-71","zeit":"2026-10-11T16:14:08Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-72","zeit":"2026-10-11T16:14:08Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-73","zeit":"2026-10-11T16:14:08Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-74","zeit":"2026-10-11T16:14:06Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-75","zeit":"2026-10-11T16:14:06Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-76","zeit":"2026-10-11T16:14:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-77","zeit":"2026-10-11T16:14:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-78","zeit":"2026-10-11T16:14:04Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-79","zeit":"2026-10-11T16:14:04Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-80","zeit":"2026-10-11T16:14:04Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-81","zeit":"2026-10-11T16:14:03Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-82","zeit":"2026-10-11T16:14:03Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-83","zeit":"2026-10-11T16:14:03Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-84","zeit":"2026-10-11T16:14:02Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-85","zeit":"2026-10-11T16:13:53Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-86","zeit":"2026-10-11T16:13:48Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-87","zeit":"2026-10-11T16:13:48Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-88","zeit":"2026-10-11T16:13:47Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-89","zeit":"2026-10-11T16:13:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-90","zeit":"2026-10-11T16:13:46Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-91","zeit":"2026-10-11T16:13:45Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-92","zeit":"2026-10-11T16:13:30Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-93","zeit":"2026-10-11T16:13:29Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-94","zeit":"2026-10-11T16:13:28Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-95","zeit":"2026-10-11T16:13:28Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-96","zeit":"2026-10-11T16:13:28Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-97","zeit":"2026-10-11T16:13:27Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-98","zeit":"2026-10-11T16:13:20Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-99","zeit":"2026-10-11T16:13:20Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-100","zeit":"2026-10-11T16:13:19Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-101","zeit":"2026-10-11T16:13:19Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-102","zeit":"2026-10-11T16:13:18Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-103","zeit":"2026-10-11T16:13:16Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-104","zeit":"2026-10-11T16:09:35Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-105","zeit":"2026-10-11T16:09:34Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-106","zeit":"2026-10-11T16:09:06Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-107","zeit":"2026-10-11T16:09:06Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-108","zeit":"2026-10-11T16:09:04Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-109","zeit":"2026-10-11T16:09:01Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-110","zeit":"2026-10-11T16:09:00Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-111","zeit":"2026-10-11T16:08:58Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-112","zeit":"2026-10-11T16:08:56Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-113","zeit":"2026-10-11T16:08:55Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-114","zeit":"2026-10-11T16:08:55Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-115","zeit":"2026-10-11T16:08:55Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-116","zeit":"2026-10-11T16:08:53Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-117","zeit":"2026-10-11T16:08:52Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-118","zeit":"2026-10-11T16:08:51Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-119","zeit":"2026-10-11T16:08:51Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-120","zeit":"2026-10-11T16:08:50Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-121","zeit":"2026-10-11T16:08:50Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-122","zeit":"2026-10-11T16:08:49Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-123","zeit":"2026-10-11T16:08:48Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-124","zeit":"2026-10-11T16:08:47Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-125","zeit":"2026-10-11T16:08:47Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-126","zeit":"2026-10-11T16:08:47Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-127","zeit":"2026-10-11T16:08:46Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-128","zeit":"2026-10-11T16:08:45Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-129","zeit":"2026-10-11T16:08:45Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-130","zeit":"2026-10-11T16:08:45Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-131","zeit":"2026-10-11T16:08:44Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-132","zeit":"2026-10-11T16:08:44Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-133","zeit":"2026-10-11T16:08:43Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-134","zeit":"2026-10-11T16:08:43Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-135","zeit":"2026-10-11T16:08:41Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-136","zeit":"2026-10-11T16:08:36Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Max gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-137","zeit":"2026-10-11T16:08:35Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Max gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-138","zeit":"2026-10-11T16:08:34Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Max gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-139","zeit":"2026-10-11T16:08:32Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-140","zeit":"2026-10-11T16:08:31Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-141","zeit":"2026-10-11T16:08:30Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-142","zeit":"2026-10-11T16:08:29Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-143","zeit":"2026-10-11T16:08:29Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-144","zeit":"2026-10-11T16:08:21Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-145","zeit":"2026-10-11T15:34:10Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-146","zeit":"2026-10-11T15:34:07Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-147","zeit":"2026-10-11T15:34:04Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-148","zeit":"2026-10-11T15:17:48Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-149","zeit":"2026-10-11T15:17:47Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-150","zeit":"2026-10-11T15:17:46Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-151","zeit":"2026-10-11T15:17:46Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-152","zeit":"2026-10-11T15:17:45Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-153","zeit":"2026-10-11T15:17:44Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-154","zeit":"2026-10-11T15:17:44Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-155","zeit":"2026-10-11T15:17:42Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-156","zeit":"2026-10-11T15:17:42Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-157","zeit":"2026-10-11T15:17:41Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-158","zeit":"2026-10-11T15:17:40Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-159","zeit":"2026-10-11T15:17:38Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-160","zeit":"2026-10-11T15:17:38Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-161","zeit":"2026-10-11T15:17:37Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-162","zeit":"2026-10-11T15:17:34Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-163","zeit":"2026-10-11T15:17:33Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-164","zeit":"2026-10-11T15:17:33Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-165","zeit":"2026-10-11T15:17:32Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-166","zeit":"2026-10-11T15:17:30Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-167","zeit":"2026-10-11T15:17:30Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-168","zeit":"2026-10-11T15:17:27Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-169","zeit":"2026-10-11T15:17:25Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-170","zeit":"2026-10-11T15:15:57Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-171","zeit":"2026-10-11T15:15:57Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-172","zeit":"2026-10-11T15:15:55Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-173","zeit":"2026-10-11T15:15:54Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-174","zeit":"2026-10-11T15:15:52Z","trainer":"ayhan.tuerk88@gmail.com","aktion":"Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"},{"id":"import-175","zeit":"2026-10-09T14:40:24Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-176","zeit":"2026-10-09T14:39:08Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-177","zeit":"2026-10-09T14:39:07Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-178","zeit":"2026-10-09T14:39:01Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-179","zeit":"2026-10-09T14:38:58Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-180","zeit":"2026-10-09T14:38:55Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-181","zeit":"2026-10-09T14:38:49Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-182","zeit":"2026-10-09T14:38:42Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-183","zeit":"2026-10-09T14:38:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen SpVgg. Röhlinghausen III geändert"},{"id":"import-184","zeit":"2026-10-09T14:37:21Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen VfB Börnig III geändert"},{"id":"import-185","zeit":"2026-10-09T14:37:20Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen VfB Börnig III geändert"},{"id":"import-186","zeit":"2026-10-09T14:37:19Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen VfB Börnig III geändert"},{"id":"import-187","zeit":"2026-10-09T14:37:18Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Serdar gegen VfB Börnig III geändert"},{"id":"import-188","zeit":"2026-10-09T14:37:16Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen VfB Börnig III geändert"},{"id":"import-189","zeit":"2026-10-09T14:37:12Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen VfB Börnig III geändert"},{"id":"import-190","zeit":"2026-10-09T14:37:04Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Selçuk gegen VfB Börnig III geändert"},{"id":"import-191","zeit":"2026-10-09T14:36:54Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-192","zeit":"2026-10-09T14:36:54Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-193","zeit":"2026-10-09T14:36:53Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-194","zeit":"2026-10-09T14:36:53Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-195","zeit":"2026-10-09T14:36:51Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-196","zeit":"2026-10-09T14:36:50Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-197","zeit":"2026-10-09T14:36:49Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-198","zeit":"2026-10-09T14:36:45Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-199","zeit":"2026-10-09T14:36:44Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-200","zeit":"2026-10-09T14:36:43Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-201","zeit":"2026-10-09T14:36:43Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-202","zeit":"2026-10-09T14:36:42Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-203","zeit":"2026-10-09T14:36:41Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-204","zeit":"2026-10-09T14:36:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-205","zeit":"2026-10-09T14:36:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-206","zeit":"2026-10-09T14:36:40Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-207","zeit":"2026-10-09T14:36:17Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-208","zeit":"2026-10-09T14:36:14Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-209","zeit":"2026-10-09T14:36:14Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-210","zeit":"2026-10-09T14:36:13Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-211","zeit":"2026-10-09T14:36:11Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-212","zeit":"2026-10-09T14:36:11Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Timur gegen VfB Börnig III geändert"},{"id":"import-213","zeit":"2026-10-09T14:36:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-214","zeit":"2026-10-09T14:36:05Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-215","zeit":"2026-10-09T14:36:03Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-216","zeit":"2026-10-09T14:35:58Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-217","zeit":"2026-10-09T14:35:57Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-218","zeit":"2026-10-09T14:35:55Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-219","zeit":"2026-10-09T14:35:54Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-220","zeit":"2026-10-09T14:35:53Z","trainer":"kreditprufung@gmail.com","aktion":"Bewertung Yassin gegen VfB Börnig III geändert"},{"id":"import-221","zeit":"2026-10-09T07:02:43Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-222","zeit":"2026-10-09T07:02:39Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-223","zeit":"2026-10-09T07:02:31Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-224","zeit":"2026-10-09T07:02:28Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-225","zeit":"2026-10-09T07:02:03Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-226","zeit":"2026-10-09T07:02:02Z","trainer":"kreditprufung@gmail.com","aktion":"Daten geändert"},{"id":"import-227","zeit":"2026-10-09T07:01:51Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-228","zeit":"2026-10-09T07:01:21Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-229","zeit":"2026-10-09T07:01:14Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-230","zeit":"2026-10-09T07:00:36Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-231","zeit":"2026-10-09T07:00:33Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-232","zeit":"2026-10-09T07:00:27Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-233","zeit":"2026-10-09T07:00:24Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-234","zeit":"2026-10-09T06:59:54Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-235","zeit":"2026-10-09T06:59:51Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-236","zeit":"2026-10-09T06:59:46Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-237","zeit":"2026-10-09T06:59:42Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-238","zeit":"2026-10-09T06:59:31Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-239","zeit":"2026-10-09T06:58:46Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-240","zeit":"2026-10-09T06:58:25Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-241","zeit":"2026-10-09T06:58:24Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-242","zeit":"2026-10-09T06:58:23Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-243","zeit":"2026-10-09T06:58:07Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-244","zeit":"2026-10-08T21:38:46Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-245","zeit":"2026-10-08T21:38:46Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-246","zeit":"2026-10-08T21:38:44Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-247","zeit":"2026-10-08T21:38:44Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-248","zeit":"2026-10-08T21:38:44Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-249","zeit":"2026-10-08T21:38:42Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-250","zeit":"2026-10-08T21:38:42Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-251","zeit":"2026-10-08T21:38:41Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-252","zeit":"2026-10-08T21:38:40Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-253","zeit":"2026-10-08T21:38:40Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-254","zeit":"2026-10-08T21:38:39Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-255","zeit":"2026-10-08T21:38:37Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-256","zeit":"2026-10-08T21:38:30Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-257","zeit":"2026-10-08T21:38:27Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-258","zeit":"2026-10-08T21:38:26Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-259","zeit":"2026-10-08T21:38:24Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-260","zeit":"2026-10-08T21:38:22Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-261","zeit":"2026-10-08T21:38:22Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-262","zeit":"2026-10-08T21:38:02Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-263","zeit":"2026-10-08T21:38:01Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-264","zeit":"2026-10-08T21:37:59Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-265","zeit":"2026-10-08T21:37:56Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-266","zeit":"2026-10-08T21:37:44Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-267","zeit":"2026-10-08T21:36:57Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-268","zeit":"2026-10-08T21:36:55Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-269","zeit":"2026-10-08T07:45:40Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-270","zeit":"2026-10-07T06:46:21Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-271","zeit":"2026-10-07T06:46:17Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-272","zeit":"2026-10-07T06:46:05Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-273","zeit":"2026-10-07T06:46:01Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-274","zeit":"2026-10-07T06:45:56Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-275","zeit":"2026-10-07T06:45:46Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-276","zeit":"2026-10-07T06:45:45Z","trainer":"kreditprufung@gmail.com","aktion":"Aufstellung geändert"},{"id":"import-277","zeit":"2026-10-07T06:45:39Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-278","zeit":"2026-10-07T06:45:24Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-279","zeit":"2026-10-07T06:45:23Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-280","zeit":"2026-10-07T06:45:22Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-281","zeit":"2026-10-07T06:45:19Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-282","zeit":"2026-10-07T06:45:17Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-283","zeit":"2026-10-07T06:45:16Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-284","zeit":"2026-10-07T06:45:15Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-285","zeit":"2026-10-07T06:45:13Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-286","zeit":"2026-10-07T06:45:12Z","trainer":"kreditprufung@gmail.com","aktion":"Spieler / Positionen geändert"},{"id":"import-287","zeit":"2026-10-06T21:32:28Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-288","zeit":"2026-10-06T21:32:26Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-289","zeit":"2026-10-06T21:32:26Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-290","zeit":"2026-10-06T21:32:16Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-291","zeit":"2026-10-06T21:32:14Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-292","zeit":"2026-10-06T21:15:03Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-293","zeit":"2026-10-06T21:14:56Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-294","zeit":"2026-10-06T21:14:54Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-295","zeit":"2026-10-06T21:14:52Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-296","zeit":"2026-10-06T21:14:52Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-297","zeit":"2026-10-06T21:14:52Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-298","zeit":"2026-10-06T21:14:50Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"},{"id":"import-299","zeit":"2026-10-06T21:14:49Z","trainer":"kreditprufung@gmail.com","aktion":"Training geändert"}],"elf":{"4-2-3-1:1":"Dawin","4-2-3-1:2":"Marcel","4-2-3-1:3":"Sait","4-2-3-1:4":"Yassin","4-2-3-1:7":"Atilla","4-2-3-1:9":"Fatih","4-1-4-1:7":"Selçuk","4-1-4-1:9":"Fatih"},"formation":"4-2-3-1","kaderGroesse":15,"reserve":1,"wNote":0.65,"wTraining":0.35}
+{
+  "spieler": [
+    {
+      "name": "Ahmad",
+      "haupt": "TW",
+      "neben": [
+        "IV",
+        "DM"
+      ],
+      "posStaerke": {
+        "DM": 50,
+        "IV": 30,
+        "TW": 95
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-09-08",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Anıl",
+      "haupt": "MS",
+      "neben": [],
+      "posStaerke": {
+        "MS": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-09-13",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Atilla",
+      "haupt": "ZM",
+      "neben": [
+        "DM",
+        "RM",
+        "LM"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "LM": 80,
+        "RM": 80,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-09-27",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Ayhan",
+      "haupt": "TW",
+      "neben": [],
+      "posStaerke": {
+        "TW": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Burak",
+      "haupt": "ZM",
+      "neben": [
+        "MS"
+      ],
+      "posStaerke": {
+        "MS": 70,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Cem",
+      "haupt": "DM",
+      "neben": [
+        "MS",
+        "RM",
+        "LM"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "LM": 70,
+        "MS": 70,
+        "RM": 70
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-09-27",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Cemil",
+      "haupt": "LV",
+      "neben": [
+        "LM"
+      ],
+      "posStaerke": {
+        "LM": 70,
+        "LV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Dawin",
+      "haupt": "RV",
+      "neben": [
+        "RM"
+      ],
+      "posStaerke": {
+        "RM": 100,
+        "RV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Emre",
+      "haupt": "IV",
+      "neben": [
+        "DM"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "IV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Ercan",
+      "haupt": "MS",
+      "neben": [
+        "OM"
+      ],
+      "posStaerke": {
+        "MS": 100,
+        "OM": 50
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Fabian",
+      "haupt": "RM",
+      "neben": [
+        "MS",
+        "LM"
+      ],
+      "posStaerke": {
+        "LM": 70,
+        "MS": 70,
+        "RM": 70
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Fatih",
+      "haupt": "LV",
+      "neben": [
+        "LM"
+      ],
+      "posStaerke": {
+        "LM": 100,
+        "LV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Gökhan",
+      "haupt": "MS",
+      "neben": [
+        "RM",
+        "LM",
+        "ZM",
+        "OM",
+        "DM"
+      ],
+      "posStaerke": {
+        "DM": 80,
+        "LM": 80,
+        "MS": 80,
+        "OM": 80,
+        "RM": 80,
+        "ZM": 80
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Göktan",
+      "haupt": "IV",
+      "neben": [
+        "DM",
+        "MS",
+        "ZM"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "IV": 100,
+        "MS": 30,
+        "ZM": 40
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Konate",
+      "haupt": "LM",
+      "neben": [
+        "MS",
+        "RM",
+        "OM"
+      ],
+      "posStaerke": {
+        "LM": 100,
+        "MS": 70,
+        "OM": 70,
+        "RM": 70
+      },
+      "sperre": 2,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Marcel",
+      "haupt": "LV",
+      "neben": [
+        "RV",
+        "IV"
+      ],
+      "posStaerke": {
+        "IV": 100,
+        "LV": 100,
+        "RV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Max",
+      "haupt": "ZM",
+      "neben": [
+        "DM",
+        "LM"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "LM": 70,
+        "ZM": 70
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Mevlüt",
+      "haupt": "DM",
+      "neben": [
+        "RV",
+        "LV"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "LV": 70,
+        "RV": 70
+      },
+      "sperre": 5,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-09",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Muharrem",
+      "haupt": "IV",
+      "neben": [
+        "LV",
+        "RV"
+      ],
+      "posStaerke": {
+        "IV": 100,
+        "LV": 70,
+        "RV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Nail Cem",
+      "haupt": "DM",
+      "neben": [
+        "MS",
+        "LM",
+        "RM",
+        "RV",
+        "IV",
+        "LV"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "IV": 70,
+        "LM": 70,
+        "LV": 70,
+        "MS": 70,
+        "RM": 70,
+        "RV": 70
+      },
+      "sperre": 3,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-09-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Nesat",
+      "haupt": "TW",
+      "neben": [],
+      "posStaerke": {
+        "TW": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Okan",
+      "haupt": "RM",
+      "neben": [
+        "LM"
+      ],
+      "posStaerke": {
+        "LM": 100,
+        "RM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Ridvan",
+      "haupt": "IV",
+      "neben": [
+        "LM",
+        "RM"
+      ],
+      "posStaerke": {
+        "IV": 80,
+        "LM": 100,
+        "RM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Sait",
+      "haupt": "DM",
+      "neben": [
+        "ZM",
+        "IV",
+        "OM"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "IV": 100,
+        "OM": 70,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Selçuk",
+      "haupt": "OM",
+      "neben": [
+        "ZM",
+        "DM"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "OM": 100,
+        "ZM": 70
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Serdar",
+      "haupt": "ZM",
+      "neben": [
+        "DM",
+        "OM"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "OM": 70,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Stephan",
+      "haupt": "LM",
+      "neben": [
+        "RM"
+      ],
+      "posStaerke": {
+        "LM": 100,
+        "RM": 75
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Timur",
+      "haupt": "DM",
+      "neben": [
+        "IV"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "IV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Tobias",
+      "haupt": "RV",
+      "neben": [
+        "DM",
+        "ZM",
+        "LV"
+      ],
+      "posStaerke": {
+        "DM": 100,
+        "LV": 100,
+        "RV": 100,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Tolga",
+      "haupt": "ZM",
+      "neben": [
+        "DM",
+        "RM"
+      ],
+      "posStaerke": {
+        "DM": 70,
+        "RM": 50,
+        "ZM": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Tugay",
+      "haupt": "MS",
+      "neben": [
+        "RM",
+        "LM"
+      ],
+      "posStaerke": {
+        "LM": 100,
+        "MS": 100,
+        "RM": 100
+      },
+      "sperre": 6,
+      "verfuegbar": false,
+      "fix": false,
+      "dabeiSeit": "2026-07-01",
+      "aktivBis": "",
+      "aktiv": true
+    },
+    {
+      "name": "Yassin",
+      "haupt": "IV",
+      "neben": [
+        "DM"
+      ],
+      "posStaerke": {
+        "DM": 55,
+        "IV": 100
+      },
+      "sperre": 0,
+      "verfuegbar": true,
+      "fix": false,
+      "dabeiSeit": "2026-09-08",
+      "aktivBis": "",
+      "aktiv": true
+    }
+  ],
+  "trainings": [
+    {
+      "id": "t1",
+      "datum": "2026-07-07"
+    },
+    {
+      "id": "t2",
+      "datum": "2026-07-09"
+    },
+    {
+      "id": "t3",
+      "datum": "2026-07-14"
+    },
+    {
+      "id": "t4",
+      "datum": "2026-07-21"
+    },
+    {
+      "id": "t5",
+      "datum": "2026-07-23"
+    },
+    {
+      "id": "t6",
+      "datum": "2026-08-04"
+    },
+    {
+      "id": "t7",
+      "datum": "2026-08-11"
+    },
+    {
+      "id": "t8",
+      "datum": "2026-08-18"
+    },
+    {
+      "id": "t9",
+      "datum": "2026-08-20"
+    },
+    {
+      "id": "t10",
+      "datum": "2026-08-25"
+    },
+    {
+      "id": "t11",
+      "datum": "2026-08-27"
+    },
+    {
+      "id": "t12",
+      "datum": "2026-09-01"
+    },
+    {
+      "id": "t13",
+      "datum": "2026-09-03"
+    },
+    {
+      "id": "t14",
+      "datum": "2026-09-08"
+    },
+    {
+      "id": "t15",
+      "datum": "2026-09-10"
+    },
+    {
+      "id": "t16",
+      "datum": "2026-09-15"
+    },
+    {
+      "id": "t92009",
+      "datum": "2026-09-17"
+    },
+    {
+      "id": "t104553",
+      "datum": "2026-09-22"
+    },
+    {
+      "id": "t113952",
+      "datum": "2026-09-24"
+    },
+    {
+      "id": "t123171",
+      "datum": "2026-09-29"
+    },
+    {
+      "id": "t131350",
+      "datum": "2026-10-01"
+    },
+    {
+      "id": "t321688",
+      "datum": "2026-10-06"
+    },
+    {
+      "id": "t325279",
+      "datum": "2026-10-08"
+    },
+    {
+      "id": "t331773",
+      "datum": "2026-10-13"
+    },
+    {
+      "id": "t336713",
+      "datum": "2026-10-15"
+    },
+    {
+      "id": "t356369",
+      "datum": "2026-10-19"
+    },
+    {
+      "id": "t343209",
+      "datum": "2026-10-20"
+    },
+    {
+      "id": "t346785",
+      "datum": "2026-10-22"
+    },
+    {
+      "id": "t352271",
+      "datum": "2026-10-27"
+    },
+    {
+      "id": "t388010",
+      "datum": "2026-10-29"
+    },
+    {
+      "id": "v6t2000",
+      "datum": "2026-11-03"
+    },
+    {
+      "id": "v6t2001",
+      "datum": "2026-11-05"
+    },
+    {
+      "id": "v6t2002",
+      "datum": "2026-11-10"
+    },
+    {
+      "id": "v6t2003",
+      "datum": "2026-11-12"
+    },
+    {
+      "id": "v6t2004",
+      "datum": "2026-11-17"
+    },
+    {
+      "id": "v6t2005",
+      "datum": "2026-11-19"
+    },
+    {
+      "id": "v6t2006",
+      "datum": "2026-11-24"
+    },
+    {
+      "id": "v6t2007",
+      "datum": "2026-11-26"
+    },
+    {
+      "id": "v6t2008",
+      "datum": "2026-12-01"
+    },
+    {
+      "id": "v6t2009",
+      "datum": "2026-12-03"
+    },
+    {
+      "id": "v6t2010",
+      "datum": "2026-12-08"
+    },
+    {
+      "id": "v6t2011",
+      "datum": "2026-12-10"
+    },
+    {
+      "id": "v6t2012",
+      "datum": "2026-12-15"
+    },
+    {
+      "id": "v6t2013",
+      "datum": "2026-12-17"
+    },
+    {
+      "id": "v6t2014",
+      "datum": "2026-12-22"
+    },
+    {
+      "id": "v6t2015",
+      "datum": "2026-12-24"
+    },
+    {
+      "id": "v6t2016",
+      "datum": "2026-12-29"
+    },
+    {
+      "id": "v6t2017",
+      "datum": "2026-12-31"
+    },
+    {
+      "id": "v6t2018",
+      "datum": "2027-01-05"
+    },
+    {
+      "id": "v6t2019",
+      "datum": "2027-01-07"
+    },
+    {
+      "id": "v6t2020",
+      "datum": "2027-01-12"
+    },
+    {
+      "id": "v6t2021",
+      "datum": "2027-01-14"
+    },
+    {
+      "id": "v6t2022",
+      "datum": "2027-01-19"
+    },
+    {
+      "id": "v6t2023",
+      "datum": "2027-01-21"
+    },
+    {
+      "id": "v6t2024",
+      "datum": "2027-01-26"
+    },
+    {
+      "id": "v6t2025",
+      "datum": "2027-01-28"
+    },
+    {
+      "id": "v6t2026",
+      "datum": "2027-02-02"
+    },
+    {
+      "id": "v6t2027",
+      "datum": "2027-02-04"
+    },
+    {
+      "id": "v6t2028",
+      "datum": "2027-02-09"
+    },
+    {
+      "id": "v6t2029",
+      "datum": "2027-02-11"
+    },
+    {
+      "id": "v6t2030",
+      "datum": "2027-02-16"
+    },
+    {
+      "id": "v6t2031",
+      "datum": "2027-02-18"
+    },
+    {
+      "id": "v6t2032",
+      "datum": "2027-02-23"
+    },
+    {
+      "id": "v6t2033",
+      "datum": "2027-02-25"
+    },
+    {
+      "id": "v6t2034",
+      "datum": "2027-03-02"
+    },
+    {
+      "id": "v6t2035",
+      "datum": "2027-03-04"
+    },
+    {
+      "id": "v6t2036",
+      "datum": "2027-03-09"
+    },
+    {
+      "id": "v6t2037",
+      "datum": "2027-03-11"
+    },
+    {
+      "id": "v6t2038",
+      "datum": "2027-03-16"
+    },
+    {
+      "id": "v6t2039",
+      "datum": "2027-03-18"
+    },
+    {
+      "id": "v6t2040",
+      "datum": "2027-03-23"
+    },
+    {
+      "id": "v6t2041",
+      "datum": "2027-03-25"
+    },
+    {
+      "id": "v6t2042",
+      "datum": "2027-03-30"
+    },
+    {
+      "id": "v6t2043",
+      "datum": "2027-04-01"
+    },
+    {
+      "id": "v6t2044",
+      "datum": "2027-04-06"
+    },
+    {
+      "id": "v6t2045",
+      "datum": "2027-04-08"
+    },
+    {
+      "id": "v6t2046",
+      "datum": "2027-04-13"
+    },
+    {
+      "id": "v6t2047",
+      "datum": "2027-04-15"
+    },
+    {
+      "id": "v6t2048",
+      "datum": "2027-04-20"
+    },
+    {
+      "id": "v6t2049",
+      "datum": "2027-04-22"
+    },
+    {
+      "id": "v6t2050",
+      "datum": "2027-04-27"
+    },
+    {
+      "id": "v6t2051",
+      "datum": "2027-04-29"
+    },
+    {
+      "id": "v6t2052",
+      "datum": "2027-05-04"
+    },
+    {
+      "id": "v6t2053",
+      "datum": "2027-05-06"
+    },
+    {
+      "id": "v6t2054",
+      "datum": "2027-05-11"
+    },
+    {
+      "id": "v6t2055",
+      "datum": "2027-05-13"
+    },
+    {
+      "id": "v6t2056",
+      "datum": "2027-05-18"
+    },
+    {
+      "id": "v6t2057",
+      "datum": "2027-05-20"
+    },
+    {
+      "id": "v6t2058",
+      "datum": "2027-05-25"
+    },
+    {
+      "id": "v6t2059",
+      "datum": "2027-05-27"
+    },
+    {
+      "id": "v6t2060",
+      "datum": "2027-06-01"
+    },
+    {
+      "id": "v6t2061",
+      "datum": "2027-06-03"
+    },
+    {
+      "id": "v6t2062",
+      "datum": "2027-06-08"
+    },
+    {
+      "id": "v6t2063",
+      "datum": "2027-06-10"
+    },
+    {
+      "id": "v6t2064",
+      "datum": "2027-06-15"
+    },
+    {
+      "id": "v6t2065",
+      "datum": "2027-06-17"
+    },
+    {
+      "id": "v6t2066",
+      "datum": "2027-06-22"
+    },
+    {
+      "id": "v6t2067",
+      "datum": "2027-06-24"
+    },
+    {
+      "id": "v6t2068",
+      "datum": "2027-06-29"
+    }
+  ],
+  "anwesend": {
+    "t1": [
+      "Ayhan",
+      "Cemil",
+      "Dawin",
+      "Emre",
+      "Ercan",
+      "Fabian",
+      "Fatih",
+      "Gökhan",
+      "Marcel",
+      "Ridvan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tobias",
+      "Tolga",
+      "Tugay"
+    ],
+    "t2": [
+      "Cemil",
+      "Dawin",
+      "Fabian",
+      "Göktan",
+      "Ridvan",
+      "Selçuk",
+      "Serdar",
+      "Tolga",
+      "Tugay"
+    ],
+    "t3": [
+      "Ayhan",
+      "Cemil",
+      "Emre",
+      "Tolga"
+    ],
+    "t4": [
+      "Cemil",
+      "Dawin",
+      "Fabian",
+      "Göktan",
+      "Max",
+      "Okan",
+      "Selçuk",
+      "Tolga"
+    ],
+    "t5": [
+      "Ayhan",
+      "Cemil",
+      "Okan",
+      "Selçuk",
+      "Timur"
+    ],
+    "t6": [
+      "Ayhan",
+      "Cemil",
+      "Dawin",
+      "Fabian",
+      "Max",
+      "Selçuk",
+      "Serdar",
+      "Tolga"
+    ],
+    "t7": [
+      "Ayhan",
+      "Cemil",
+      "Dawin",
+      "Sait",
+      "Selçuk",
+      "Serdar",
+      "Tobias",
+      "Tolga"
+    ],
+    "t8": [
+      "Cemil",
+      "Dawin",
+      "Ercan",
+      "Max",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Tobias"
+    ],
+    "t9": [
+      "Ayhan",
+      "Cemil",
+      "Dawin",
+      "Ercan",
+      "Marcel",
+      "Max",
+      "Muharrem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Tobias"
+    ],
+    "t10": [
+      "Ayhan",
+      "Dawin",
+      "Fabian",
+      "Fatih",
+      "Göktan",
+      "Max",
+      "Okan",
+      "Sait",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tobias"
+    ],
+    "t11": [
+      "Ercan",
+      "Fatih",
+      "Max",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur"
+    ],
+    "t12": [
+      "Cemil",
+      "Dawin",
+      "Emre",
+      "Fabian",
+      "Göktan",
+      "Max",
+      "Nail Cem",
+      "Okan",
+      "Serdar",
+      "Tobias",
+      "Tolga"
+    ],
+    "t13": [
+      "Cemil",
+      "Emre",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Tolga"
+    ],
+    "t14": [
+      "Ahmad",
+      "Ayhan",
+      "Cemil",
+      "Emre",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tolga",
+      "Yassin"
+    ],
+    "t15": [
+      "Ahmad",
+      "Ayhan",
+      "Mevlüt",
+      "Okan",
+      "Selçuk",
+      "Tobias",
+      "Tolga",
+      "Yassin"
+    ],
+    "t16": [
+      "Ahmad",
+      "Anıl",
+      "Ayhan",
+      "Dawin",
+      "Emre",
+      "Ercan",
+      "Fabian",
+      "Fatih",
+      "Max",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tobias",
+      "Yassin"
+    ],
+    "t92009": [
+      "Ahmad",
+      "Anıl",
+      "Ayhan",
+      "Dawin",
+      "Ercan",
+      "Max",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Tugay",
+      "Yassin"
+    ],
+    "t104553": [
+      "Ahmad",
+      "Anıl",
+      "Dawin",
+      "Ercan",
+      "Max",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Yassin"
+    ],
+    "t113952": [
+      "Ahmad",
+      "Ayhan",
+      "Max",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Yassin"
+    ],
+    "t123171": [
+      "Ahmad",
+      "Atilla",
+      "Ayhan",
+      "Cem",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tolga",
+      "Yassin"
+    ],
+    "t131350": [
+      "Ahmad",
+      "Anıl",
+      "Atilla",
+      "Ayhan",
+      "Cem",
+      "Dawin",
+      "Fatih",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tolga",
+      "Yassin"
+    ],
+    "t321688": [
+      "Ahmad",
+      "Anıl",
+      "Atilla",
+      "Ayhan",
+      "Cem",
+      "Fatih",
+      "Nail Cem",
+      "Okan",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tolga",
+      "Yassin"
+    ],
+    "t325279": [
+      "Ahmad",
+      "Anıl",
+      "Atilla",
+      "Ayhan",
+      "Cem",
+      "Fatih",
+      "Nail Cem",
+      "Okan",
+      "Sait",
+      "Selçuk",
+      "Serdar",
+      "Timur",
+      "Tolga",
+      "Yassin"
+    ],
+    "t331773": [],
+    "t336713": [],
+    "t356369": [],
+    "t343209": [],
+    "t346785": [],
+    "t352271": [],
+    "t388010": []
+  },
+  "spiele": [
+    {
+      "nr": 1,
+      "datum": "2026-07-12",
+      "zeit": "11:00",
+      "gegner": "TGD Essen-West 4",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": 5,
+      "tg": 6
+    },
+    {
+      "nr": 2,
+      "datum": "2026-07-19",
+      "zeit": "13:00",
+      "gegner": "RWT Herne 79/09 II",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": 2,
+      "tg": 5
+    },
+    {
+      "nr": 3,
+      "datum": "2026-07-26",
+      "zeit": "13:00",
+      "gegner": "OB HL",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": 3,
+      "tg": 7
+    },
+    {
+      "nr": 4,
+      "datum": "2026-08-02",
+      "zeit": "17:00",
+      "gegner": "Ugarit FC",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": 0,
+      "tg": 10
+    },
+    {
+      "nr": 8,
+      "datum": "2026-08-16",
+      "zeit": "",
+      "gegner": "SF Stuckenbusch-Hochlarmark",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": 0,
+      "tg": 0
+    },
+    {
+      "nr": 5,
+      "datum": "2026-08-23",
+      "zeit": "15:00",
+      "gegner": "FC Herne 57",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": 5,
+      "tg": 4
+    },
+    {
+      "nr": 6,
+      "datum": "2026-08-30",
+      "zeit": "17:00",
+      "gegner": "Zonguldakspor Bickern II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": 8,
+      "tg": 1
+    },
+    {
+      "nr": 7,
+      "datum": "2026-09-06",
+      "zeit": "11:00",
+      "gegner": "SC Constantin Herne II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": 6,
+      "tg": 3
+    },
+    {
+      "nr": 9,
+      "datum": "2026-09-27",
+      "zeit": "17:00",
+      "gegner": "VfB Börnig III",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": 4,
+      "tg": 6
+    },
+    {
+      "nr": 10,
+      "datum": "2026-10-04",
+      "zeit": "13:00",
+      "gegner": "SpVgg. Röhlinghausen III",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": 3,
+      "tg": 3
+    },
+    {
+      "nr": 11,
+      "datum": "2026-10-11",
+      "zeit": "13:00",
+      "gegner": "ESV Herne III",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": 2,
+      "tg": 1
+    },
+    {
+      "nr": 19,
+      "datum": "2026-10-11",
+      "zeit": "13:00",
+      "gegner": "Spiel-Club Röhlinghausen",
+      "ha": "",
+      "wb": "Freundschaft",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 20,
+      "datum": "2026-10-11",
+      "zeit": "13:00",
+      "gegner": "Spiel-Club Röhlinghausen",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": 2,
+      "tg": 1
+    },
+    {
+      "nr": 12,
+      "datum": "2026-10-18",
+      "zeit": "13:00",
+      "gegner": "RSV Wanne II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 13,
+      "datum": "2026-10-25",
+      "zeit": "13:00",
+      "gegner": "Spvg. Arminia Holsterhausen II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 14,
+      "datum": "2026-11-08",
+      "zeit": "15:00",
+      "gegner": "DJK Wanne-Eickel 88 II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 15,
+      "datum": "2026-11-15",
+      "zeit": "17:00",
+      "gegner": "ASC Leone III",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 16,
+      "datum": "2026-11-29",
+      "zeit": "17:00",
+      "gegner": "Eintracht Ickern III",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 17,
+      "datum": "2026-12-06",
+      "zeit": "17:00",
+      "gegner": "Spiel-Club Röhlinghausen",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 18,
+      "datum": "2026-12-13",
+      "zeit": "13:00",
+      "gegner": "Blau Weiß Börnig II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null
+    },
+    {
+      "nr": 21,
+      "datum": "2027-02-14",
+      "zeit": "13:00",
+      "gegner": "Blau Weiß Börnig II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202127"
+    },
+    {
+      "nr": 22,
+      "datum": "2027-02-21",
+      "zeit": "15:00",
+      "gegner": "Spiel-Club Röhlinghausen",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202129"
+    },
+    {
+      "nr": 23,
+      "datum": "2027-02-28",
+      "zeit": "17:00",
+      "gegner": "FC Herne 57",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202141"
+    },
+    {
+      "nr": 24,
+      "datum": "2027-03-07",
+      "zeit": "15:00",
+      "gegner": "Zonguldakspor Bickern II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202145"
+    },
+    {
+      "nr": 25,
+      "datum": "2027-03-14",
+      "zeit": "17:00",
+      "gegner": "SC Constantin Herne II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202155"
+    },
+    {
+      "nr": 26,
+      "datum": "2027-04-11",
+      "zeit": "13:00",
+      "gegner": "VfB Börnig III",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202177"
+    },
+    {
+      "nr": 27,
+      "datum": "2027-04-18",
+      "zeit": "17:00",
+      "gegner": "SpVgg. Röhlinghausen III",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202190"
+    },
+    {
+      "nr": 28,
+      "datum": "2027-05-02",
+      "zeit": "13:00",
+      "gegner": "RSV Wanne II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202204"
+    },
+    {
+      "nr": 29,
+      "datum": "2027-05-09",
+      "zeit": "13:00",
+      "gegner": "Spvg. Arminia Holsterhausen II",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202209"
+    },
+    {
+      "nr": 30,
+      "datum": "2027-05-17",
+      "zeit": "13:00",
+      "gegner": "DJK Wanne-Eickel 88 II",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202218"
+    },
+    {
+      "nr": 31,
+      "datum": "2027-05-23",
+      "zeit": "17:00",
+      "gegner": "ASC Leone III",
+      "ha": "H",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202225"
+    },
+    {
+      "nr": 32,
+      "datum": "2027-05-30",
+      "zeit": "15:00",
+      "gegner": "Eintracht Ickern III",
+      "ha": "A",
+      "wb": "Kreisliga C",
+      "tf": null,
+      "tg": null,
+      "fussballId": "210202233"
+    }
+  ],
+  "noten": {
+    "g1": {
+      "Ayhan": 7.5,
+      "Cemil": 6.5,
+      "Dawin": 7.5,
+      "Emre": 7.0,
+      "Ercan": 7.5,
+      "Fabian": 4.0,
+      "Göktan": 7.0,
+      "Konate": 7.0,
+      "Max": 6.5,
+      "Ridvan": 8.0,
+      "Timur": 6.0,
+      "Tolga": 7.5,
+      "Tugay": 7.5
+    },
+    "g2": {
+      "Ayhan": 8.0,
+      "Cemil": 7.25,
+      "Dawin": 7.25,
+      "Emre": 6.0,
+      "Ercan": 6.25,
+      "Fabian": 5.5,
+      "Göktan": 6.25,
+      "Konate": 7.75,
+      "Max": 7.25,
+      "Ridvan": 6.0,
+      "Sait": 8.5,
+      "Selçuk": 7.25,
+      "Timur": 6.5,
+      "Tolga": 7.25
+    },
+    "g3": {
+      "Ayhan": 8.0,
+      "Cemil": 8.0,
+      "Dawin": 8.5,
+      "Göktan": 6.0,
+      "Konate": 8.0,
+      "Marcel": 8.0,
+      "Max": 7.5,
+      "Okan": 6.5,
+      "Selçuk": 7.5,
+      "Timur": 7.0
+    },
+    "g4": {
+      "Ayhan": 6.0,
+      "Cemil": 8.0,
+      "Dawin": 8.0,
+      "Fabian": 5.0,
+      "Gökhan": 6.0,
+      "Konate": 8.5,
+      "Marcel": 6.0,
+      "Max": 6.0,
+      "Serdar": 8.5,
+      "Timur": 6.0,
+      "Tobias": 6.5,
+      "Tolga": 7.5
+    },
+    "g5": {
+      "Ayhan": 8.25,
+      "Cemil": 8.0,
+      "Dawin": 7.5,
+      "Ercan": 7.75,
+      "Fabian": 4.5,
+      "Göktan": 6.75,
+      "Marcel": 8.0,
+      "Max": 7.25,
+      "Sait": 8.0,
+      "Selçuk": 7.5,
+      "Serdar": 7.75,
+      "Stephan": 9.0,
+      "Tobias": 6.0,
+      "Tugay": 8.0
+    },
+    "g6": {
+      "Burak": 7.5,
+      "Dawin": 8.0,
+      "Emre": 7.0,
+      "Ercan": 8.0,
+      "Fatih": 9.0,
+      "Göktan": 8.0,
+      "Marcel": 8.0,
+      "Max": 7.5,
+      "Okan": 6.5,
+      "Sait": 9.0,
+      "Selçuk": 8.5,
+      "Serdar": 9.0,
+      "Stephan": 10.0,
+      "Timur": 7.0,
+      "Tobias": 8.0,
+      "Tolga": 7.0
+    },
+    "g7": {
+      "Cemil": 6.5,
+      "Emre": 7.0,
+      "Ercan": 9.0,
+      "Fatih": 8.0,
+      "Marcel": 8.0,
+      "Okan": 6.0,
+      "Ridvan": 7.5,
+      "Selçuk": 7.5,
+      "Serdar": 8.0,
+      "Stephan": 8.0,
+      "Timur": 6.0,
+      "Tobias": 8.0,
+      "Tolga": 7.0,
+      "Tugay": 8.0
+    },
+    "g9": {
+      "Dawin": 7.0,
+      "Emre": 6.375,
+      "Ercan": 7.5,
+      "Fatih": 6.875,
+      "Göktan": 5.75,
+      "Marcel": 5.75,
+      "Max": 6.125,
+      "Okan": 6.25,
+      "Sait": 7.5,
+      "Selçuk": 6.625,
+      "Serdar": 6.75,
+      "Timur": 6.0,
+      "Tolga": 6.375,
+      "Yassin": 6.875
+    },
+    "g10": {
+      "Atilla": 8.0,
+      "Cemil": 7.5,
+      "Dawin": 7.0,
+      "Emre": 6.75,
+      "Ercan": 6.875,
+      "Fatih": 7.0,
+      "Marcel": 7.0,
+      "Max": 7.0,
+      "Okan": 6.625,
+      "Selçuk": 8.125,
+      "Serdar": 8.625,
+      "Timur": 7.0,
+      "Tobias": 7.75,
+      "Tolga": 6.75,
+      "Yassin": 6.75
+    },
+    "g20": {
+      "Atilla": 7.75,
+      "Dawin": 7.5,
+      "Emre": 7.25,
+      "Ercan": 7.875,
+      "Fatih": 8.0,
+      "Göktan": 8.0,
+      "Max": 7.375,
+      "Okan": 6.625,
+      "Sait": 9.625,
+      "Selçuk": 8.25,
+      "Serdar": 8.0,
+      "Tolga": 6.375,
+      "Yassin": 7.5
+    }
+  },
+  "trainerNoten": {
+    "g1": {
+      "Ayhan": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Cemil": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Emre": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Ercan": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Fabian": {
+        "legacy": {
+          "value": 4,
+          "email": "Altbestand"
+        }
+      },
+      "Göktan": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Konate": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Ridvan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Tolga": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Tugay": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g2": {
+      "Ayhan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Cemil": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      },
+      "Emre": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Ercan": {
+        "legacy": {
+          "value": 6.25,
+          "email": "Altbestand"
+        }
+      },
+      "Fabian": {
+        "legacy": {
+          "value": 5.5,
+          "email": "Altbestand"
+        }
+      },
+      "Göktan": {
+        "legacy": {
+          "value": 6.25,
+          "email": "Altbestand"
+        }
+      },
+      "Konate": {
+        "legacy": {
+          "value": 7.75,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      },
+      "Ridvan": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Sait": {
+        "legacy": {
+          "value": 8.5,
+          "email": "Altbestand"
+        }
+      },
+      "Selçuk": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Tolga": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g3": {
+      "Ayhan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Cemil": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 8.5,
+          "email": "Altbestand"
+        }
+      },
+      "Göktan": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Konate": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Marcel": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Okan": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Selçuk": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g4": {
+      "Ayhan": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Cemil": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Fabian": {
+        "legacy": {
+          "value": 5,
+          "email": "Altbestand"
+        }
+      },
+      "Gökhan": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Konate": {
+        "legacy": {
+          "value": 8.5,
+          "email": "Altbestand"
+        }
+      },
+      "Marcel": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Serdar": {
+        "legacy": {
+          "value": 8.5,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Tobias": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Tolga": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g5": {
+      "Ayhan": {
+        "legacy": {
+          "value": 8.25,
+          "email": "Altbestand"
+        }
+      },
+      "Cemil": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Ercan": {
+        "legacy": {
+          "value": 7.75,
+          "email": "Altbestand"
+        }
+      },
+      "Fabian": {
+        "legacy": {
+          "value": 4.5,
+          "email": "Altbestand"
+        }
+      },
+      "Göktan": {
+        "legacy": {
+          "value": 6.75,
+          "email": "Altbestand"
+        }
+      },
+      "Marcel": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 7.25,
+          "email": "Altbestand"
+        }
+      },
+      "Sait": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Selçuk": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Serdar": {
+        "legacy": {
+          "value": 7.75,
+          "email": "Altbestand"
+        }
+      },
+      "Stephan": {
+        "legacy": {
+          "value": 9,
+          "email": "Altbestand"
+        }
+      },
+      "Tobias": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Tugay": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g6": {
+      "Burak": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Dawin": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Emre": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Ercan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Fatih": {
+        "legacy": {
+          "value": 9,
+          "email": "Altbestand"
+        }
+      },
+      "Göktan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Marcel": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Max": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Okan": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Sait": {
+        "legacy": {
+          "value": 9,
+          "email": "Altbestand"
+        }
+      },
+      "Selçuk": {
+        "legacy": {
+          "value": 8.5,
+          "email": "Altbestand"
+        }
+      },
+      "Serdar": {
+        "legacy": {
+          "value": 9,
+          "email": "Altbestand"
+        }
+      },
+      "Stephan": {
+        "legacy": {
+          "value": 10,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Tobias": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Tolga": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g7": {
+      "Cemil": {
+        "legacy": {
+          "value": 6.5,
+          "email": "Altbestand"
+        }
+      },
+      "Emre": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Ercan": {
+        "legacy": {
+          "value": 9,
+          "email": "Altbestand"
+        }
+      },
+      "Fatih": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Marcel": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Okan": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Ridvan": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Selçuk": {
+        "legacy": {
+          "value": 7.5,
+          "email": "Altbestand"
+        }
+      },
+      "Serdar": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Stephan": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Timur": {
+        "legacy": {
+          "value": 6,
+          "email": "Altbestand"
+        }
+      },
+      "Tobias": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      },
+      "Tolga": {
+        "legacy": {
+          "value": 7,
+          "email": "Altbestand"
+        }
+      },
+      "Tugay": {
+        "legacy": {
+          "value": 8,
+          "email": "Altbestand"
+        }
+      }
+    },
+    "g9": {
+      "Dawin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Emre": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Ercan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Fatih": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.25,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Göktan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 5.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 5.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Marcel": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 5.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 5.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Max": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 5.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Okan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 5.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Sait": {
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Selçuk": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.25,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Serdar": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Timur": {
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Tolga": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.25,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Yassin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.25,
+          "email": "kreditprufung@gmail.com"
+        }
+      }
+    },
+    "g10": {
+      "Atilla": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Cemil": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Dawin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Emre": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Ercan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Fatih": {
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Marcel": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Max": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Okan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.25,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Selçuk": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8.25,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Serdar": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Timur": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Tobias": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Tolga": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Yassin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      }
+    },
+    "g20": {
+      "Atilla": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Dawin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Emre": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Ercan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Fatih": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Göktan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Max": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.25,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Okan": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Sait": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 9.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 9.75,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Selçuk": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 8.25,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8.25,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Serdar": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 8.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Tolga": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 6.75,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 6,
+          "email": "kreditprufung@gmail.com"
+        }
+      },
+      "Yassin": {
+        "5945bb21-b658-4e18-83a4-f73480001c3a": {
+          "value": 7.5,
+          "email": "ayhan.tuerk88@gmail.com"
+        },
+        "c91f8630-e26f-481d-86ef-51af05f9e15f": {
+          "value": 7.5,
+          "email": "kreditprufung@gmail.com"
+        }
+      }
+    }
+  },
+  "spielPositionen": {},
+  "spielberichte": {
+    "g9": {
+      "kommentar": "Grundordnung\n\nWelche Formation? Ändert sie sich mit/gegen Ball?\n\nSpielaufbau\n\nKurz hinten raus oder lange Bälle? Über welche Seite? Wird ein 6er gesucht?\n\nTorwart\n\nSpielt er mit? Wie bei Rückpässen? Gute/schlechte Füße? Abschläge wohin?\n\nInnenverteidiger\n\nWer ist schnell/langsam? Wer ist am Ball unsicher? Wie reagieren sie auf Druck?\n\nAußenverteidiger\n\nGehen sie weit mit nach vorne? Entstehen Räume hinter ihnen?\n\nPressing\n\nLaufen sie früh an oder stehen sie tief? Wer löst das Pressing aus?\n\nDefensivlinie\n\nHoch oder tief? Kompakt? Raum zwischen Abwehr und Mittelfeld?\n\nNach Ballverlust\n\nSofort Gegenpressing oder Rückzug? Wo sind sie offen?\n\nNach Ballgewinn\n\nSofort nach vorne? Langer Ball? Konter über Außen?\n\nAngriff\n\nWie kommen sie hauptsächlich vors Tor? Flanken, Zentrum, lange Bälle, Steckpässe?\n\nSchlüsselspieler\n\nWelche Nummern fallen auf? Wer macht Tempo? Wer verteilt? Wer sucht Abschlüsse?\n\nStürmer\n\nKommt er entgegen oder geht tief? Kopfballstark? Schnell? Welchen Fuß bevorzugt er?\n\nFlügel\n\nWelche Seite ist gefährlicher? Ziehen sie nach innen oder gehen zur Grundlinie?\n\nZweite Bälle\n\nWer sammelt sie ein? Wie gut rücken sie nach langen Bällen nach?\n\nEcken offensiv\n\nWer schießt? Wohin? Kurz/lang? Welche Spieler werden gesucht?\n\nEcken defensiv\n\nMann- oder Raumdeckung? Pfosten besetzt? Wo wirken sie anfällig?\n\nFreistöße\n\nWer schießt? Direkt oder Variante? Was machen sie bei Freistößen aus dem Halbfeld?\n\nMentalität\n\nVerhalten nach Gegentor/Führung? Werden sie hektisch? Viel Diskussion?\n\nWechsel\n\nWer kommt? Welche Position? Ändert sich dadurch ihre Spielweise? \n\n🔥 Die wichtigsten Sachen\n\nWenn ihr nicht alles aufschreiben wollt, beantwortet während der 90 Minuten unbedingt diese 7 Punkte:\n\n1. Wie bauen sie auf?\n→ Und vor allem: Wie können wir ihren Aufbau stören?\n\n2. Wie können wir gegen sie Chancen erzeugen?\n→ Wo ist ihre größte defensive Schwäche?\n\n3. Wie erzeugen SIE Chancen?\n→ Was müssen wir in zwei Wochen unbedingt verhindern?\n\n4. Wer sind Börnigs 3 gefährlichste Spieler?\n→ Trikotnummer + Position + Stärke notieren.\n\n5. Was passiert bei Ballverlust?\n→ Sind sie für Konter anfällig?\n\n6. Standards offensiv & defensiv?\n→ Besonders Ecken genau beobachten.\n\n7. Was wäre unser Matchplan gegen Börnig?\nAm Ende solltet ihr daraus 3 konkrete Anweisungen ableiten können.\n\nZum Beispiel: „Nr. 6 unter Druck setzen – linke Abwehrseite attackieren – nach Ballgewinn sofort hinter den hochstehenden RV spielen.“\n\nUnd ganz wichtig: Nummern statt Namen notieren. Also beispielsweise #7 sehr schnell, rechts / #10 Spielmacher / #4 IV unsicher unter Druck. Dann kannst du mir nach dem Spiel einfach eure Notizen schicken und ich mache daraus einen kompakten Gegnerbericht + Matchplan für euer Spiel gegen Börnig.",
+      "text": "",
+      "stats": {
+        "Ercan": {
+          "tore": 3,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Fatih": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    },
+    "g15": {
+      "kommentar": "Rakip çöp",
+      "text": "",
+      "stats": {}
+    },
+    "g5": {
+      "kommentar": "",
+      "text": "",
+      "stats": {
+        "Ercan": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Göktan": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Sait": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Stephan": {
+          "tore": 2,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    },
+    "g6": {
+      "kommentar": "",
+      "text": "",
+      "stats": {
+        "Burak": {
+          "tore": 2,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Selçuk": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Stephan": {
+          "tore": 4,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Tolga": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    },
+    "g7": {
+      "kommentar": "",
+      "text": "",
+      "stats": {
+        "Ercan": {
+          "tore": 4,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Stephan": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Tugay": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    },
+    "g10": {
+      "kommentar": "",
+      "text": "",
+      "stats": {
+        "Atilla": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Selçuk": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Tobias": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    },
+    "g20": {
+      "kommentar": "",
+      "text": "",
+      "stats": {
+        "Ercan": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        },
+        "Sait": {
+          "tore": 1,
+          "vorlagen": 0,
+          "gelb": 0
+        }
+      }
+    }
+  },
+  "aenderungen": [
+    {
+      "id": "import-0",
+      "zeit": "2026-10-11T21:38:23Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielstatistik Sait gegen ESV Herne III geändert"
+    },
+    {
+      "id": "import-1",
+      "zeit": "2026-10-11T21:38:20Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielstatistik Ercan gegen ESV Herne III geändert"
+    },
+    {
+      "id": "import-2",
+      "zeit": "2026-10-11T21:38:10Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielstatistik Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-3",
+      "zeit": "2026-10-11T21:38:06Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielstatistik Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-4",
+      "zeit": "2026-10-11T21:38:01Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielplan geändert"
+    },
+    {
+      "id": "import-5",
+      "zeit": "2026-10-11T21:38:00Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spielplan geändert"
+    },
+    {
+      "id": "import-6",
+      "zeit": "2026-10-11T19:23:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-7",
+      "zeit": "2026-10-11T19:23:32Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-8",
+      "zeit": "2026-10-11T19:23:21Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Max gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-9",
+      "zeit": "2026-10-11T19:23:13Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-10",
+      "zeit": "2026-10-11T19:22:58Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-11",
+      "zeit": "2026-10-11T19:22:47Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-12",
+      "zeit": "2026-10-11T19:22:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-13",
+      "zeit": "2026-10-11T19:22:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-14",
+      "zeit": "2026-10-11T19:22:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-15",
+      "zeit": "2026-10-11T19:22:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-16",
+      "zeit": "2026-10-11T19:22:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-17",
+      "zeit": "2026-10-11T16:15:58Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-18",
+      "zeit": "2026-10-11T16:15:58Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-19",
+      "zeit": "2026-10-11T16:15:26Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-20",
+      "zeit": "2026-10-11T16:15:26Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-21",
+      "zeit": "2026-10-11T16:15:20Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-22",
+      "zeit": "2026-10-11T16:15:15Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Spielstatistik Sait gegen ESV Herne III geändert"
+    },
+    {
+      "id": "import-23",
+      "zeit": "2026-10-11T16:15:12Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-24",
+      "zeit": "2026-10-11T16:15:10Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Spielstatistik Ercan gegen ESV Herne III geändert"
+    },
+    {
+      "id": "import-25",
+      "zeit": "2026-10-11T16:15:08Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-26",
+      "zeit": "2026-10-11T16:15:07Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-27",
+      "zeit": "2026-10-11T16:15:06Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-28",
+      "zeit": "2026-10-11T16:15:06Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-29",
+      "zeit": "2026-10-11T16:15:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-30",
+      "zeit": "2026-10-11T16:15:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-31",
+      "zeit": "2026-10-11T16:15:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-32",
+      "zeit": "2026-10-11T16:15:00Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Spielplan geändert"
+    },
+    {
+      "id": "import-33",
+      "zeit": "2026-10-11T16:14:59Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Spielplan geändert"
+    },
+    {
+      "id": "import-34",
+      "zeit": "2026-10-11T16:14:58Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-35",
+      "zeit": "2026-10-11T16:14:57Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-36",
+      "zeit": "2026-10-11T16:14:51Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-37",
+      "zeit": "2026-10-11T16:14:50Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-38",
+      "zeit": "2026-10-11T16:14:49Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-39",
+      "zeit": "2026-10-11T16:14:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-40",
+      "zeit": "2026-10-11T16:14:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-41",
+      "zeit": "2026-10-11T16:14:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-42",
+      "zeit": "2026-10-11T16:14:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-43",
+      "zeit": "2026-10-11T16:14:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-44",
+      "zeit": "2026-10-11T16:14:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-45",
+      "zeit": "2026-10-11T16:14:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-46",
+      "zeit": "2026-10-11T16:14:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-47",
+      "zeit": "2026-10-11T16:14:39Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-48",
+      "zeit": "2026-10-11T16:14:38Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-49",
+      "zeit": "2026-10-11T16:14:38Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-50",
+      "zeit": "2026-10-11T16:14:37Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-51",
+      "zeit": "2026-10-11T16:14:34Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Max gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-52",
+      "zeit": "2026-10-11T16:14:29Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-53",
+      "zeit": "2026-10-11T16:14:29Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-54",
+      "zeit": "2026-10-11T16:14:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-55",
+      "zeit": "2026-10-11T16:14:27Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-56",
+      "zeit": "2026-10-11T16:14:22Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-57",
+      "zeit": "2026-10-11T16:14:19Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-58",
+      "zeit": "2026-10-11T16:14:18Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-59",
+      "zeit": "2026-10-11T16:14:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-60",
+      "zeit": "2026-10-11T16:14:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-61",
+      "zeit": "2026-10-11T16:14:15Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-62",
+      "zeit": "2026-10-11T16:14:14Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-63",
+      "zeit": "2026-10-11T16:14:13Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-64",
+      "zeit": "2026-10-11T16:14:12Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-65",
+      "zeit": "2026-10-11T16:14:12Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-66",
+      "zeit": "2026-10-11T16:14:11Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-67",
+      "zeit": "2026-10-11T16:14:10Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-68",
+      "zeit": "2026-10-11T16:14:10Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-69",
+      "zeit": "2026-10-11T16:14:09Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-70",
+      "zeit": "2026-10-11T16:14:09Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-71",
+      "zeit": "2026-10-11T16:14:08Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-72",
+      "zeit": "2026-10-11T16:14:08Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-73",
+      "zeit": "2026-10-11T16:14:08Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-74",
+      "zeit": "2026-10-11T16:14:06Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-75",
+      "zeit": "2026-10-11T16:14:06Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-76",
+      "zeit": "2026-10-11T16:14:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-77",
+      "zeit": "2026-10-11T16:14:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-78",
+      "zeit": "2026-10-11T16:14:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-79",
+      "zeit": "2026-10-11T16:14:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-80",
+      "zeit": "2026-10-11T16:14:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-81",
+      "zeit": "2026-10-11T16:14:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-82",
+      "zeit": "2026-10-11T16:14:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-83",
+      "zeit": "2026-10-11T16:14:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-84",
+      "zeit": "2026-10-11T16:14:02Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-85",
+      "zeit": "2026-10-11T16:13:53Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-86",
+      "zeit": "2026-10-11T16:13:48Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-87",
+      "zeit": "2026-10-11T16:13:48Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-88",
+      "zeit": "2026-10-11T16:13:47Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-89",
+      "zeit": "2026-10-11T16:13:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-90",
+      "zeit": "2026-10-11T16:13:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-91",
+      "zeit": "2026-10-11T16:13:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-92",
+      "zeit": "2026-10-11T16:13:30Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-93",
+      "zeit": "2026-10-11T16:13:29Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-94",
+      "zeit": "2026-10-11T16:13:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-95",
+      "zeit": "2026-10-11T16:13:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-96",
+      "zeit": "2026-10-11T16:13:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-97",
+      "zeit": "2026-10-11T16:13:27Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-98",
+      "zeit": "2026-10-11T16:13:20Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-99",
+      "zeit": "2026-10-11T16:13:20Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-100",
+      "zeit": "2026-10-11T16:13:19Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-101",
+      "zeit": "2026-10-11T16:13:19Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-102",
+      "zeit": "2026-10-11T16:13:18Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-103",
+      "zeit": "2026-10-11T16:13:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-104",
+      "zeit": "2026-10-11T16:09:35Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-105",
+      "zeit": "2026-10-11T16:09:34Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-106",
+      "zeit": "2026-10-11T16:09:06Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-107",
+      "zeit": "2026-10-11T16:09:06Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-108",
+      "zeit": "2026-10-11T16:09:04Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-109",
+      "zeit": "2026-10-11T16:09:01Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-110",
+      "zeit": "2026-10-11T16:09:00Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-111",
+      "zeit": "2026-10-11T16:08:58Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-112",
+      "zeit": "2026-10-11T16:08:56Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-113",
+      "zeit": "2026-10-11T16:08:55Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-114",
+      "zeit": "2026-10-11T16:08:55Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-115",
+      "zeit": "2026-10-11T16:08:55Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Serdar gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-116",
+      "zeit": "2026-10-11T16:08:53Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-117",
+      "zeit": "2026-10-11T16:08:52Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-118",
+      "zeit": "2026-10-11T16:08:51Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-119",
+      "zeit": "2026-10-11T16:08:51Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-120",
+      "zeit": "2026-10-11T16:08:50Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-121",
+      "zeit": "2026-10-11T16:08:50Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Selçuk gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-122",
+      "zeit": "2026-10-11T16:08:49Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-123",
+      "zeit": "2026-10-11T16:08:48Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-124",
+      "zeit": "2026-10-11T16:08:47Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-125",
+      "zeit": "2026-10-11T16:08:47Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-126",
+      "zeit": "2026-10-11T16:08:47Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-127",
+      "zeit": "2026-10-11T16:08:46Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-128",
+      "zeit": "2026-10-11T16:08:45Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-129",
+      "zeit": "2026-10-11T16:08:45Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-130",
+      "zeit": "2026-10-11T16:08:45Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-131",
+      "zeit": "2026-10-11T16:08:44Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-132",
+      "zeit": "2026-10-11T16:08:44Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-133",
+      "zeit": "2026-10-11T16:08:43Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-134",
+      "zeit": "2026-10-11T16:08:43Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Sait gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-135",
+      "zeit": "2026-10-11T16:08:41Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Okan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-136",
+      "zeit": "2026-10-11T16:08:36Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Max gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-137",
+      "zeit": "2026-10-11T16:08:35Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Max gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-138",
+      "zeit": "2026-10-11T16:08:34Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Max gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-139",
+      "zeit": "2026-10-11T16:08:32Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-140",
+      "zeit": "2026-10-11T16:08:31Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-141",
+      "zeit": "2026-10-11T16:08:30Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-142",
+      "zeit": "2026-10-11T16:08:29Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-143",
+      "zeit": "2026-10-11T16:08:29Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Göktan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-144",
+      "zeit": "2026-10-11T16:08:21Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-145",
+      "zeit": "2026-10-11T15:34:10Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-146",
+      "zeit": "2026-10-11T15:34:07Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-147",
+      "zeit": "2026-10-11T15:34:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-148",
+      "zeit": "2026-10-11T15:17:48Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-149",
+      "zeit": "2026-10-11T15:17:47Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-150",
+      "zeit": "2026-10-11T15:17:46Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-151",
+      "zeit": "2026-10-11T15:17:46Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-152",
+      "zeit": "2026-10-11T15:17:45Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Fatih gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-153",
+      "zeit": "2026-10-11T15:17:44Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-154",
+      "zeit": "2026-10-11T15:17:44Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-155",
+      "zeit": "2026-10-11T15:17:42Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-156",
+      "zeit": "2026-10-11T15:17:42Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-157",
+      "zeit": "2026-10-11T15:17:41Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Ercan gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-158",
+      "zeit": "2026-10-11T15:17:40Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Emre gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-159",
+      "zeit": "2026-10-11T15:17:38Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-160",
+      "zeit": "2026-10-11T15:17:38Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-161",
+      "zeit": "2026-10-11T15:17:37Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-162",
+      "zeit": "2026-10-11T15:17:34Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Tolga gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-163",
+      "zeit": "2026-10-11T15:17:33Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-164",
+      "zeit": "2026-10-11T15:17:33Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-165",
+      "zeit": "2026-10-11T15:17:32Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-166",
+      "zeit": "2026-10-11T15:17:30Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-167",
+      "zeit": "2026-10-11T15:17:30Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Dawin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-168",
+      "zeit": "2026-10-11T15:17:27Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-169",
+      "zeit": "2026-10-11T15:17:25Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-170",
+      "zeit": "2026-10-11T15:15:57Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-171",
+      "zeit": "2026-10-11T15:15:57Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-172",
+      "zeit": "2026-10-11T15:15:55Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-173",
+      "zeit": "2026-10-11T15:15:54Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-174",
+      "zeit": "2026-10-11T15:15:52Z",
+      "trainer": "ayhan.tuerk88@gmail.com",
+      "aktion": "Bewertung Atilla gegen Spiel-Club Röhlinghausen geändert"
+    },
+    {
+      "id": "import-175",
+      "zeit": "2026-10-09T14:40:24Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-176",
+      "zeit": "2026-10-09T14:39:08Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-177",
+      "zeit": "2026-10-09T14:39:07Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-178",
+      "zeit": "2026-10-09T14:39:01Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-179",
+      "zeit": "2026-10-09T14:38:58Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-180",
+      "zeit": "2026-10-09T14:38:55Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-181",
+      "zeit": "2026-10-09T14:38:49Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-182",
+      "zeit": "2026-10-09T14:38:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-183",
+      "zeit": "2026-10-09T14:38:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen SpVgg. Röhlinghausen III geändert"
+    },
+    {
+      "id": "import-184",
+      "zeit": "2026-10-09T14:37:21Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-185",
+      "zeit": "2026-10-09T14:37:20Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-186",
+      "zeit": "2026-10-09T14:37:19Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-187",
+      "zeit": "2026-10-09T14:37:18Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Serdar gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-188",
+      "zeit": "2026-10-09T14:37:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-189",
+      "zeit": "2026-10-09T14:37:12Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-190",
+      "zeit": "2026-10-09T14:37:04Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Selçuk gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-191",
+      "zeit": "2026-10-09T14:36:54Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-192",
+      "zeit": "2026-10-09T14:36:54Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-193",
+      "zeit": "2026-10-09T14:36:53Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-194",
+      "zeit": "2026-10-09T14:36:53Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-195",
+      "zeit": "2026-10-09T14:36:51Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-196",
+      "zeit": "2026-10-09T14:36:50Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-197",
+      "zeit": "2026-10-09T14:36:49Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-198",
+      "zeit": "2026-10-09T14:36:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-199",
+      "zeit": "2026-10-09T14:36:44Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-200",
+      "zeit": "2026-10-09T14:36:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-201",
+      "zeit": "2026-10-09T14:36:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-202",
+      "zeit": "2026-10-09T14:36:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-203",
+      "zeit": "2026-10-09T14:36:41Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-204",
+      "zeit": "2026-10-09T14:36:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-205",
+      "zeit": "2026-10-09T14:36:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-206",
+      "zeit": "2026-10-09T14:36:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-207",
+      "zeit": "2026-10-09T14:36:17Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-208",
+      "zeit": "2026-10-09T14:36:14Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-209",
+      "zeit": "2026-10-09T14:36:14Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-210",
+      "zeit": "2026-10-09T14:36:13Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-211",
+      "zeit": "2026-10-09T14:36:11Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-212",
+      "zeit": "2026-10-09T14:36:11Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Timur gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-213",
+      "zeit": "2026-10-09T14:36:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-214",
+      "zeit": "2026-10-09T14:36:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-215",
+      "zeit": "2026-10-09T14:36:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-216",
+      "zeit": "2026-10-09T14:35:58Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-217",
+      "zeit": "2026-10-09T14:35:57Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-218",
+      "zeit": "2026-10-09T14:35:55Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-219",
+      "zeit": "2026-10-09T14:35:54Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-220",
+      "zeit": "2026-10-09T14:35:53Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Bewertung Yassin gegen VfB Börnig III geändert"
+    },
+    {
+      "id": "import-221",
+      "zeit": "2026-10-09T07:02:43Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-222",
+      "zeit": "2026-10-09T07:02:39Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-223",
+      "zeit": "2026-10-09T07:02:31Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-224",
+      "zeit": "2026-10-09T07:02:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-225",
+      "zeit": "2026-10-09T07:02:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-226",
+      "zeit": "2026-10-09T07:02:02Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Daten geändert"
+    },
+    {
+      "id": "import-227",
+      "zeit": "2026-10-09T07:01:51Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-228",
+      "zeit": "2026-10-09T07:01:21Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-229",
+      "zeit": "2026-10-09T07:01:14Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-230",
+      "zeit": "2026-10-09T07:00:36Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-231",
+      "zeit": "2026-10-09T07:00:33Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-232",
+      "zeit": "2026-10-09T07:00:27Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-233",
+      "zeit": "2026-10-09T07:00:24Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-234",
+      "zeit": "2026-10-09T06:59:54Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-235",
+      "zeit": "2026-10-09T06:59:51Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-236",
+      "zeit": "2026-10-09T06:59:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-237",
+      "zeit": "2026-10-09T06:59:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-238",
+      "zeit": "2026-10-09T06:59:31Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-239",
+      "zeit": "2026-10-09T06:58:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-240",
+      "zeit": "2026-10-09T06:58:25Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-241",
+      "zeit": "2026-10-09T06:58:24Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-242",
+      "zeit": "2026-10-09T06:58:23Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-243",
+      "zeit": "2026-10-09T06:58:07Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-244",
+      "zeit": "2026-10-08T21:38:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-245",
+      "zeit": "2026-10-08T21:38:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-246",
+      "zeit": "2026-10-08T21:38:44Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-247",
+      "zeit": "2026-10-08T21:38:44Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-248",
+      "zeit": "2026-10-08T21:38:44Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-249",
+      "zeit": "2026-10-08T21:38:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-250",
+      "zeit": "2026-10-08T21:38:42Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-251",
+      "zeit": "2026-10-08T21:38:41Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-252",
+      "zeit": "2026-10-08T21:38:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-253",
+      "zeit": "2026-10-08T21:38:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-254",
+      "zeit": "2026-10-08T21:38:39Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-255",
+      "zeit": "2026-10-08T21:38:37Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-256",
+      "zeit": "2026-10-08T21:38:30Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-257",
+      "zeit": "2026-10-08T21:38:27Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-258",
+      "zeit": "2026-10-08T21:38:26Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-259",
+      "zeit": "2026-10-08T21:38:24Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-260",
+      "zeit": "2026-10-08T21:38:22Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-261",
+      "zeit": "2026-10-08T21:38:22Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-262",
+      "zeit": "2026-10-08T21:38:02Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-263",
+      "zeit": "2026-10-08T21:38:01Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-264",
+      "zeit": "2026-10-08T21:37:59Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-265",
+      "zeit": "2026-10-08T21:37:56Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-266",
+      "zeit": "2026-10-08T21:37:44Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-267",
+      "zeit": "2026-10-08T21:36:57Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-268",
+      "zeit": "2026-10-08T21:36:55Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-269",
+      "zeit": "2026-10-08T07:45:40Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-270",
+      "zeit": "2026-10-07T06:46:21Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-271",
+      "zeit": "2026-10-07T06:46:17Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-272",
+      "zeit": "2026-10-07T06:46:05Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-273",
+      "zeit": "2026-10-07T06:46:01Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-274",
+      "zeit": "2026-10-07T06:45:56Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-275",
+      "zeit": "2026-10-07T06:45:46Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-276",
+      "zeit": "2026-10-07T06:45:45Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Aufstellung geändert"
+    },
+    {
+      "id": "import-277",
+      "zeit": "2026-10-07T06:45:39Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-278",
+      "zeit": "2026-10-07T06:45:24Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-279",
+      "zeit": "2026-10-07T06:45:23Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-280",
+      "zeit": "2026-10-07T06:45:22Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-281",
+      "zeit": "2026-10-07T06:45:19Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-282",
+      "zeit": "2026-10-07T06:45:17Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-283",
+      "zeit": "2026-10-07T06:45:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-284",
+      "zeit": "2026-10-07T06:45:15Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-285",
+      "zeit": "2026-10-07T06:45:13Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-286",
+      "zeit": "2026-10-07T06:45:12Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Spieler / Positionen geändert"
+    },
+    {
+      "id": "import-287",
+      "zeit": "2026-10-06T21:32:28Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-288",
+      "zeit": "2026-10-06T21:32:26Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-289",
+      "zeit": "2026-10-06T21:32:26Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-290",
+      "zeit": "2026-10-06T21:32:16Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-291",
+      "zeit": "2026-10-06T21:32:14Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-292",
+      "zeit": "2026-10-06T21:15:03Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-293",
+      "zeit": "2026-10-06T21:14:56Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-294",
+      "zeit": "2026-10-06T21:14:54Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-295",
+      "zeit": "2026-10-06T21:14:52Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-296",
+      "zeit": "2026-10-06T21:14:52Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-297",
+      "zeit": "2026-10-06T21:14:52Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-298",
+      "zeit": "2026-10-06T21:14:50Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    },
+    {
+      "id": "import-299",
+      "zeit": "2026-10-06T21:14:49Z",
+      "trainer": "kreditprufung@gmail.com",
+      "aktion": "Training geändert"
+    }
+  ],
+  "elf": {
+    "4-2-3-1:1": "Dawin",
+    "4-2-3-1:2": "Marcel",
+    "4-2-3-1:3": "Sait",
+    "4-2-3-1:4": "Yassin",
+    "4-2-3-1:7": "Atilla",
+    "4-2-3-1:9": "Fatih",
+    "4-1-4-1:7": "Selçuk",
+    "4-1-4-1:9": "Fatih"
+  },
+  "formation": "4-2-3-1",
+  "kaderGroesse": 15,
+  "reserve": 1,
+  "wNote": 0.65,
+  "wTraining": 0.35
+}

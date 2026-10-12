@@ -1381,7 +1381,7 @@ function SlotWahl({ slot, werte, belegt, aktuell, onWahl, onZu }) {
 
 
 /* ---------------------------------------------------------------- Spielerprofile / Analyse */
-function Spielerprofile({ d, berechnet }) {
+function Spielerprofile({ d, save, berechnet }) {
   const [name, setName] = useState(berechnet.rang[0]?.name || d.spieler[0]?.name);
   const w = berechnet.werte.find((x)=>x.name===name) || berechnet.werte[0];
   if (!w) return null;
@@ -1389,7 +1389,10 @@ function Spielerprofile({ d, berechnet }) {
   const kurve=(w.werte||[]).slice(-10);
   const entries = d.spiele.map(sp=>({sp, trainer:trainerEintraege(d,sp.nr,w.name), avg:spielNote(d,sp.nr,w.name)})).filter(x=>x.avg!=null).slice(-8).reverse();
   return <div className="pb-24">
-    <Kopf titel="Spielerprofil" />
+    <Kopf titel="Spielerprofil" rechts={<button onClick={() => {
+      const selected = d.spieler.find(s => s.name === w.name);
+      if (selected) spielerLoeschen(d, save, selected);
+    }} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{background:'#fff',color:C.warn,border:`1px solid ${C.warn}`}}>Spieler löschen</button>} />
     <div className="px-4 pb-4">
       <select value={w.name} onChange={e=>setName(e.target.value)} className="w-full rounded-xl px-3 py-3 font-bold" style={{border:`1px solid ${C.linie}`,background:'#fff'}}>
         {[...d.spieler].sort((a,b)=>a.name.localeCompare(b.name,'de')).map(s=><option key={s.name}>{s.name}</option>)}
@@ -1516,12 +1519,7 @@ function VerlaufExport({ d, save, berechnet }) {
   return <div className="pb-24"><Kopf titel="Verlauf & Export" rechts={<div className="flex gap-2"><label className="text-sm font-bold px-3 py-1.5 rounded-full cursor-pointer" style={{background:'#fff',color:C.rot,border:`1px solid ${C.rot}`}}>Import<input type="file" accept=".xls,.csv,text/csv,application/vnd.ms-excel" className="hidden" onChange={(e)=>{excelImport(e.target.files?.[0]);e.target.value=''}}/></label><button onClick={excelExport} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{background:C.rot,color:'#fff'}}>Excel Export</button></div>}/><div className="px-4 pb-3 text-sm" style={{color:C.grau}}>Export: Excel-Datei. Import: der Export dieser App (.xls) oder CSV. Positionen, Positionsstärken und Spielbewertungen werden übernommen.</div><div style={{borderTop:`1px solid ${C.linie}`}}>{(d.aenderungen||[]).length?(d.aenderungen||[]).map(x=><div key={x.id} className="px-4 py-3" style={{borderBottom:`1px solid ${C.linie}`}}><div className="font-bold">{x.aktion}</div><div className="text-xs mt-1" style={{color:C.grau}}>{x.trainer} · {new Date(x.zeit).toLocaleString('de-DE')}</div></div>):<div className="p-4 text-sm" style={{color:C.grau}}>Der Verlauf beginnt mit Änderungen ab Version 2.</div>}</div></div>;
 }
 
-/* ---------------------------------------------------------------- Positionen */
-function Positionen({ d, save }) {
-  const upd = (name, feld, wert) =>
-    save({ ...d, spieler: d.spieler.map((s) => (s.name === name ? { ...s, [feld]: wert } : s)) });
-
-  const spielerLoeschen = (spieler) => {
+function spielerLoeschen(d, save, spieler) {
     const name = spieler.name;
     const bewertungen = d.spiele.filter(sp => d.noten?.["g" + sp.nr]?.[name] != null || d.trainerNoten?.["g" + sp.nr]?.[name] != null).length;
     if (!window.confirm(`${name} endgültig aus dem Kader löschen?\nAlle zugehörigen Anwesenheiten, Spielbewertungen, Tore und Assists werden ebenfalls entfernt.${bewertungen ? `\nSpielbewertungen in ${bewertungen} Spielen sind betroffen.` : ""}\nAlternativ kannst du den Spieler auf inaktiv setzen, um die Historie zu behalten.\nDiese Löschung kann nicht rückgängig gemacht werden.`)) return;
@@ -1546,7 +1544,14 @@ function Positionen({ d, save }) {
       spielberichte,
       elf,
     }, `Spieler ${name} endgültig gelöscht`);
-  };
+  }
+
+/* ---------------------------------------------------------------- Positionen */
+function Positionen({ d, save }) {
+  const upd = (name, feld, wert) =>
+    save({ ...d, spieler: d.spieler.map((s) => (s.name === name ? { ...s, [feld]: wert } : s)) });
+
+
 
   const neuerSpieler = () => {
     const name = prompt("Name des Spielers");
@@ -1573,7 +1578,7 @@ function Positionen({ d, save }) {
           <div key={s.name} className="px-4 py-3" style={{ borderBottom: `1px solid ${C.linie}` }}>
             <div className="flex items-center gap-2 mb-2">
               <div className="font-bold flex-1">{s.name}</div>
-              <button onClick={() => spielerLoeschen(s)} className="text-xs font-bold px-2 py-1 rounded" style={{color:C.warn,border:`1px solid ${C.warn}`}}>Löschen</button>
+              <button onClick={() => spielerLoeschen(d, save, s)} className="text-xs font-bold px-2 py-1 rounded" style={{color:C.warn,border:`1px solid ${C.warn}`}}>Löschen</button>
               <button onClick={()=>upd(s.name,"aktiv",s.aktiv===false)} className="text-xs font-bold px-2 py-1 rounded" style={{background:s.aktiv===false?'#FAE3E0':C.rasenHell,color:s.aktiv===false?C.warn:C.rasen}}>{s.aktiv===false?'inaktiv':'aktiv'}</button>
             </div>
             <div className="grid grid-cols-2 gap-2 mb-3">

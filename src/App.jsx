@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
+import exportDaten from "./exportDaten.json";
 
 /* ---------------------------------------------------------------- Konstanten */
 const KEY = "firtinaspor3-v1";
@@ -202,13 +203,13 @@ function aenderungsText(alt, neu) {
 }
 
 function useDaten(session) {
-  const STORAGE_KEY = "firtinaspor-v2-offline-test";
+  const STORAGE_KEY = "firtinaspor-v5-export-2026-10-12";
   const [daten, setDaten] = useState(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? normalisiereDaten(JSON.parse(raw)) : normalisiereDaten(startDaten());
+      return raw ? normalisiereDaten(JSON.parse(raw)) : normalisiereDaten(exportDaten);
     } catch {
-      return normalisiereDaten(startDaten());
+      return normalisiereDaten(exportDaten);
     }
   });
   const [status, setStatus] = useState("bereit");
@@ -1746,7 +1747,7 @@ function HauptApp({ session }) {
               {status === "speichert" ? "speichert …" : status === "fehler" ? "Speicherfehler" : "lokal gespeichert"}
             </div>
             <InstallAppButton />
-            <button onClick={() => { if (confirm("Offline-Testdaten wirklich zurücksetzen?")) { localStorage.removeItem("firtinaspor-v2-offline-test"); location.reload(); } }} className="text-xs font-bold px-2 py-1 rounded" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>
+            <button onClick={() => { if (confirm("Offline-Testdaten wirklich zurücksetzen?")) { localStorage.removeItem("firtinaspor-v5-export-2026-10-12"); location.reload(); } }} className="text-xs font-bold px-2 py-1 rounded" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>
               Test reset
             </button>
           </div>

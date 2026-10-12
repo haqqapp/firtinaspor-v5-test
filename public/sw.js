@@ -1,4 +1,4 @@
-const CACHE = 'firtinaspor-pwa-v2';
+const CACHE = 'firtinaspor-pwa-v5-haqq-logo';
 const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (event) => {

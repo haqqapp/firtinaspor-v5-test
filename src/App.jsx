@@ -1467,7 +1467,7 @@ function Aufstellung({ d, save, berechnet }) {
           <div className="text-lg font-black">{formation}</div>
           {spiel && <div className="text-xs opacity-80 mt-1">{aufstellungsTitel(spiel)} · {aufstellungsMeta(spiel, '')}</div>}
         </div>
-        <div className="relative" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
+        <div className="v10-pitch" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
           <div className="absolute inset-4 rounded-3xl" style={{ border: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4" style={{ borderLeft: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 120, height: 120, border: '2px solid rgba(255,255,255,.75)' }} />
@@ -1486,9 +1486,9 @@ function Aufstellung({ d, save, berechnet }) {
               <button
                 key={si}
                 onClick={() => setOffen(si)}
-                className="absolute -translate-x-1/2 -translate-y-1/2 rounded-2xl px-2 py-2 text-center active:opacity-70 shadow-sm"
+                className="v10-player rounded-2xl px-2 py-2 text-center active:opacity-70 shadow-sm"
                 style={{
-                  left: `${pos.x}%`, top: `${pos.y}%`, width: 102,
+                  left: `${pos.x}%`, top: `${pos.y}%`,
                   background: name ? 'rgba(255,255,255,.96)' : 'rgba(255,255,255,.18)',
                   border: manuell ? `3px solid ${C.gold}` : '2px solid rgba(255,255,255,.2)',
                 }}>

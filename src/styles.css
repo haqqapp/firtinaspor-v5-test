@@ -107,3 +107,17 @@ body{background:#f7f3ef;-webkit-tap-highlight-color:transparent;overscroll-behav
   body{user-select:none;-webkit-user-select:none}
   input,textarea{user-select:text;-webkit-user-select:text}
 }
+
+/* V10 pitch: explicit positioning rather than unavailable Tailwind utility classes */
+.v10-pitch { position:relative; width:100%; min-height:620px; overflow:hidden; }
+.v10-pitch > .absolute { position:absolute; }
+.v10-pitch .inset-4 { inset:1rem; }
+.v10-pitch .top-4 { top:1rem; }
+.v10-pitch .bottom-4 { bottom:1rem; }
+.v10-pitch .top-1\/2 { top:50%; }
+.v10-pitch .left-1\/2 { left:50%; }
+.v10-pitch .-translate-x-1\/2 { transform:translateX(-50%); }
+.v10-pitch .-translate-y-1\/2 { transform:translateY(-50%); }
+.v10-pitch .top-1\/2.-translate-x-1\/2.-translate-y-1\/2 { transform:translate(-50%,-50%); }
+.v10-player { position:absolute; transform:translate(-50%,-50%); width:min(102px, 13.5%); z-index:2; min-width:0; }
+@media(max-width:600px) { .v10-player {padding:5px 2px!important; border-radius:9px!important;} .v10-player .font-black {font-size:10px!important;} }

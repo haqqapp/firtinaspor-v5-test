@@ -1,4 +1,4 @@
-const CACHE = 'firtinaspor-pwa-v8-torjaeger-17er-kader';
+const CACHE = 'firtinaspor-pwa-v9-aufstellungsalternativen';
 const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (event) => {

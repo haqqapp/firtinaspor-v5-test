@@ -172,14 +172,24 @@ const xmlEsc = (s = "") => String(s)
 function formationKoordinaten(formation) {
   const rows = REIHEN[formation] || [];
   const map = {};
-  const yStart = 12;
-  const ySpan = 76;
+  // Portrait field: strikers at the top, goalkeeper at the bottom.
+  const xByCount = {
+    1: [50],
+    2: [39, 61],
+    3: [19, 50, 81],
+    4: [14, 38, 62, 86],
+    5: [10, 30, 50, 70, 90],
+    6: [9, 25, 41, 59, 75, 91],
+  };
+  const yByRowCount = {
+    4: [14, 37, 65, 90],
+    5: [13, 32, 50, 69, 90],
+    6: [12, 29, 44, 59, 74, 90],
+  };
+  const ys = yByRowCount[rows.length] || rows.map((_, i) => 12 + i * (78 / Math.max(1, rows.length - 1)));
   rows.forEach((reihe, ri) => {
-    const y = rows.length === 1 ? 50 : yStart + (ri * ySpan) / Math.max(1, rows.length - 1);
-    reihe.forEach((si, ci) => {
-      const x = reihe.length === 1 ? 50 : 14 + (ci * 72) / Math.max(1, reihe.length - 1);
-      map[si] = { x, y };
-    });
+    const xs = xByCount[reihe.length] || reihe.map((_, i) => 12 + i * (76 / Math.max(1, reihe.length - 1)));
+    reihe.forEach((si, ci) => { map[si] = { x: xs[ci], y: ys[ri], rowSize: reihe.length }; });
   });
   return map;
 }
@@ -1469,7 +1479,7 @@ function Aufstellung({ d, save, berechnet }) {
         </div>
         <div className="v10-pitch" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
           <div className="absolute inset-4 rounded-3xl" style={{ border: '2px solid rgba(255,255,255,.75)' }} />
-          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4" style={{ borderLeft: '2px solid rgba(255,255,255,.75)' }} />
+          <div className="absolute left-4 right-4 top-1/2" style={{ borderTop: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 120, height: 120, border: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 6, height: 6, background: 'rgba(255,255,255,.85)' }} />
           <div className="absolute left-1/2 -translate-x-1/2 top-4" style={{ width: 190, height: 84, border: '2px solid rgba(255,255,255,.75)', borderTop: 'none' }} />
@@ -1493,7 +1503,7 @@ function Aufstellung({ d, save, berechnet }) {
                   border: manuell ? `3px solid ${C.gold}` : '2px solid rgba(255,255,255,.2)',
                 }}>
                 <div className="font-black tracking-wide" style={{ fontSize: 10, color: name ? C.rasen : 'rgba(255,255,255,.85)' }}>{slot.p}</div>
-                <div className="font-black leading-tight truncate" style={{ fontSize: 13, color: name ? C.tinte : 'rgba(255,255,255,.75)' }}>{name || 'frei'}</div>
+                <div className="font-black leading-tight truncate" style={{ fontSize: 'clamp(10px, 2.5vw, 13px)', color: name ? C.tinte : 'rgba(255,255,255,.75)' }}>{name || 'frei'}</div>
                 {w && w.oNote != null && <div className="tabular-nums" style={{ fontSize: 10, color: C.grau }}>{fmtNote(w.oNote)}</div>}
               </button>
             );

@@ -121,3 +121,19 @@ body{background:#f7f3ef;-webkit-tap-highlight-color:transparent;overscroll-behav
 .v10-pitch .top-1\/2.-translate-x-1\/2.-translate-y-1\/2 { transform:translate(-50%,-50%); }
 .v10-player { position:absolute; transform:translate(-50%,-50%); width:min(102px, 13.5%); z-index:2; min-width:0; }
 @media(max-width:600px) { .v10-player {padding:5px 2px!important; border-radius:9px!important;} .v10-player .font-black {font-size:10px!important;} }
+
+/* V11: consistent layout, navigation and form controls across all screens */
+:root{--v11-ink:#211b20;--v11-brand:#92172e;--v11-border:#e8dfe0;--v11-bg:#f8f6f5}
+html{background:var(--v11-bg)}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--v11-ink);line-height:1.45}
+#root>div{background:var(--v11-bg)}
+button{transition:filter .14s ease,transform .12s ease,background .16s ease}
+button:active{filter:brightness(.94)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #cc8796;outline-offset:2px}
+input:not([type="checkbox"]):not([type="range"]),select,textarea{min-height:38px;border-radius:10px}
+select{max-width:100%}
+.v11-pitch{min-height:620px;background-color:#24613f;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 60px,transparent 60px 120px)!important;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.v11-pitch .v10-player{touch-action:none;cursor:grab;border-radius:13px!important;box-shadow:0 3px 9px rgba(0,0,0,.18);width:min(100px,16%);padding:8px 3px!important}
+.v11-pitch .v10-player:active{cursor:grabbing}
+@media(max-width:470px){.v11-pitch{min-height:570px}.v11-pitch .v10-player{width:17%;padding:5px 2px!important}.v11-pitch .v10-player div{font-size:10px!important}}
+@media(min-width:760px){#root>div{border-radius:20px;overflow:hidden;margin:15px auto}body{padding-bottom:20px}}

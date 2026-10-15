@@ -40,6 +40,14 @@ const FORMATIONEN = {
     { p: "ZM", r: "Achter rechts" }, { p: "ZM", r: "Achter links" },
     { p: "RM", r: "Rechtsaußen" }, { p: "LM", r: "Linksaußen" }, { p: "MS", r: "Mittelstürmer" },
   ],
+  "3-5-2": [
+    { p: "TW", r: "Torwart" }, { p: "IV", r: "Innenverteidiger rechts" },
+    { p: "IV", r: "Innenverteidiger zentral" }, { p: "IV", r: "Innenverteidiger links" },
+    { p: "RM", r: "Rechte Schiene" }, { p: "ZM", r: "Achter rechts" },
+    { p: "DM", r: "Sechser" }, { p: "ZM", r: "Achter links" },
+    { p: "LM", r: "Linke Schiene" }, { p: "MS", r: "Stürmer rechts" },
+    { p: "MS", r: "Stürmer links" },
+  ],
   "3-6-1": [
     { p: "TW", r: "Torwart" }, { p: "IV", r: "Innenverteidiger rechts" },
     { p: "IV", r: "Innenverteidiger zentral" }, { p: "IV", r: "Innenverteidiger links" },
@@ -53,6 +61,7 @@ const REIHEN = {
   "4-1-4-1": [[10], [9, 8, 7, 6], [5], [4, 3, 2, 1], [0]],
   "4-1-2-1-2": [[10, 9], [8], [7, 6], [5], [4, 3, 2, 1], [0]],
   "4-3-3": [[9, 10, 8], [7, 6, 5], [4, 3, 2, 1], [0]],
+  "3-5-2": [[10, 9], [8, 7, 6, 5, 4], [3, 2, 1], [0]],
   "3-6-1": [[10], [9, 8, 7, 6, 5, 4], [3, 2, 1], [0]],
 };
 
@@ -212,7 +221,7 @@ function aufstellungsMeta(spiel, formation) {
   return teile.join(' · ');
 }
 
-function aufstellungsSvg({ formation, spiel, slots, elf, bank, reserve, nachName }) {
+function aufstellungsSvg({ formation, spiel, slots, elf, bank, reserve, nachName, positionen = {} }) {
   const W = 1080;
   const H = 1600;
   const fieldX = 90;
@@ -226,7 +235,7 @@ function aufstellungsSvg({ formation, spiel, slots, elf, bank, reserve, nachName
   const reserveText = reserve ? `17. Reserve: ${reserve.name}` : 'Keine Reserve gesetzt';
 
   const playerNodes = slots.map((slot, si) => {
-    const pos = coords[si] || { x: 50, y: 50 };
+    const pos = positionen[si] || coords[si] || { x: 50, y: 50 };
     const cx = fieldX + (fieldW * pos.x) / 100;
     const cy = fieldY + (fieldH * pos.y) / 100;
     const name = elf[si] || 'frei';
@@ -295,13 +304,13 @@ function aufstellungsBildSpeichern(args) {
     }, 'image/png');
   };
   img.onerror = () => {
-    URL.revokeObjectURL(svgUrl);
     const fallback = document.createElement('a');
     fallback.href = svgUrl;
     fallback.download = `aufstellung-${args.formation}-${args.spiel?.datum || heute()}.svg`;
     document.body.appendChild(fallback);
     fallback.click();
     fallback.remove();
+    setTimeout(() => URL.revokeObjectURL(svgUrl), 1000);
   };
   img.src = svgUrl;
 }
@@ -330,6 +339,8 @@ function normalisiereDaten(raw) {
       posStaerke: s.posStaerke || (s.haupt ? { [s.haupt]: 100, ...Object.fromEntries((s.neben || []).map((p) => [p, 70])) } : {}),
     })),
     elf: raw?.elf || {},
+    v11Positionen: raw?.v11Positionen || {},
+    v11Aufstellungen: raw?.v11Aufstellungen || {},
     kaderGroesse: raw?.v8Kader17 ? 16 : 16,
     reserve: 1,
     v8Kader17: true,
@@ -1419,13 +1430,55 @@ function Kaderplanung({ d, save, berechnet }) {
 /* ---------------------------------------------------------------- Aufstellung */
 function Aufstellung({ d, save, berechnet }) {
   const [offen, setOffen] = useState(null);
+  const drag = React.useRef(null);
+  const [moving, setMoving] = useState({});
   const [spielNr, setSpielNr] = useState(() => naechstesSpiel(d.spiele)?.nr || d.spiele[0]?.nr || "");
   const formation = d.formation;
   const slots = FORMATIONEN[formation];
-  const elf = vorschlaege(berechnet.werte, formation, d.elf);
   const nachName = Object.fromEntries(berechnet.werte.map((w) => [w.name, w]));
   const spielListe = useMemo(() => sortierteSpiele(d.spiele), [d.spiele]);
   const spiel = spielListe.find((sp) => String(sp.nr) === String(spielNr)) || spielListe[0] || null;
+  const scope = `${spiel?.nr || 'all'}:${formation}`;
+  const positionen = d.v11Positionen?.[scope] || {};
+  const overrides = { ...d.elf };
+  // For each fixture, edits are independent; old V9 choices remain as defaults.
+  const savedElf = d.v11Aufstellungen?.[scope];
+  if (savedElf) Object.keys(savedElf).forEach((i) => { overrides[`${formation}:${i}`] = savedElf[i]; });
+  const elf = vorschlaege(berechnet.werte, formation, overrides);
+  const surface = React.useRef(null);
+  const positionInPitch = (event) => {
+    const rect = surface.current?.getBoundingClientRect();
+    if (!rect) return null;
+    return { x: Math.max(9, Math.min(91, ((event.clientX - rect.left) / rect.width) * 100)), y: Math.max(10, Math.min(90, ((event.clientY - rect.top) / rect.height) * 100)) };
+  };
+  const beginDrag = (event, index) => {
+    if (event.button != null && event.button !== 0) return;
+    drag.current = { index, x: event.clientX, y: event.clientY, moved: false };
+    event.currentTarget.setPointerCapture?.(event.pointerId);
+  };
+  const moveDrag = (event) => {
+    if (!drag.current) return;
+    if (Math.hypot(event.clientX - drag.current.x, event.clientY - drag.current.y) < 5 && !drag.current.moved) return;
+    drag.current.moved = true;
+    const pos = positionInPitch(event);
+    if (pos) setMoving((prev) => ({ ...prev, [drag.current.index]: pos }));
+  };
+  const endDrag = (event) => {
+    if (!drag.current) return;
+    const {index, moved} = drag.current;
+    drag.current = null;
+    if (!moved) { setOffen(index); return; }
+    const pos = positionInPitch(event);
+    setMoving({});
+    if (!pos) return;
+    save({ ...d, v11Positionen: { ...(d.v11Positionen || {}), [scope]: { ...positionen, [index]: pos } } });
+  };
+  const resetPositions = () => {
+    const next = {...(d.v11Positionen || {})};
+    delete next[scope];
+    save({...d, v11Positionen: next});
+    setMoving({});
+  };
   const koords = useMemo(() => formationKoordinaten(formation), [formation]);
 
   useEffect(() => {
@@ -1435,15 +1488,13 @@ function Aufstellung({ d, save, berechnet }) {
   }, [spielListe, spielNr]);
 
   const setzeSlot = (i, name) => {
-    const neu = { ...d.elf };
-    if (name == null) delete neu[formation + ":" + i];
+    const changes = {...(d.v11Aufstellungen?.[scope] || {})};
+    if (name == null) delete changes[i];
     else {
-      Object.keys(neu).forEach((k) => {
-        if (k.startsWith(formation + ":") && neu[k] === name) delete neu[k];
-      });
-      neu[formation + ":" + i] = name;
+      Object.keys(changes).forEach((k) => { if (changes[k] === name) delete changes[k]; });
+      changes[i] = name;
     }
-    save({ ...d, elf: neu });
+    save({ ...d, v11Aufstellungen: { ...(d.v11Aufstellungen || {}), [scope]: changes } });
     setOffen(null);
   };
 
@@ -1452,7 +1503,7 @@ function Aufstellung({ d, save, berechnet }) {
 
   return (
     <div className="pb-24">
-      <Kopf titel="Aufstellung" rechts={<button onClick={() => aufstellungsBildSpeichern({ formation, spiel, slots, elf, bank, reserve, nachName })} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{ background: C.rot, color: '#fff' }}>Bild speichern</button>} />
+      <Kopf titel="Aufstellung" rechts={<button onClick={() => aufstellungsBildSpeichern({ formation, spiel, slots, elf, bank, reserve, nachName, positionen: {...positionen, ...moving} })} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{ background: C.rot, color: '#fff' }}>Bild speichern</button>} />
 
       <div className="px-4 pb-4 space-y-3">
         <div className="flex gap-2 overflow-x-auto">{Object.keys(FORMATIONEN).map((f)=><button key={f} onClick={()=>save({...d,formation:f})} className="shrink-0 px-3 py-2 rounded-full text-sm font-bold" style={{background:formation===f?C.rot:"#EFE7E3",color:formation===f?"#fff":C.grau}}>{f}</button>)}</div>
@@ -1477,7 +1528,7 @@ function Aufstellung({ d, save, berechnet }) {
           <div className="text-lg font-black">{formation}</div>
           {spiel && <div className="text-xs opacity-80 mt-1">{aufstellungsTitel(spiel)} · {aufstellungsMeta(spiel, '')}</div>}
         </div>
-        <div className="v10-pitch" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
+        <div ref={surface} className="v10-pitch v11-pitch" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
           <div className="absolute inset-4 rounded-3xl" style={{ border: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-4 right-4 top-1/2" style={{ borderTop: '2px solid rgba(255,255,255,.75)' }} />
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 120, height: 120, border: '2px solid rgba(255,255,255,.75)' }} />
@@ -1490,12 +1541,15 @@ function Aufstellung({ d, save, berechnet }) {
           {slots.map((slot, si) => {
             const name = elf[si];
             const w = name ? nachName[name] : null;
-            const manuell = !!d.elf[formation + ":" + si];
-            const pos = koords[si] || { x: 50, y: 50 };
+            const manuell = !!(savedElf?.[si] || d.elf[formation + ":" + si]);
+            const pos = moving[si] || positionen[si] || koords[si] || { x: 50, y: 50 };
             return (
               <button
                 key={si}
-                onClick={() => setOffen(si)}
+                onPointerDown={(e) => beginDrag(e, si)}
+                onPointerMove={moveDrag}
+                onPointerUp={endDrag}
+                onPointerCancel={() => { drag.current = null; setMoving({}); }}
                 className="v10-player rounded-2xl px-2 py-2 text-center active:opacity-70 shadow-sm"
                 style={{
                   left: `${pos.x}%`, top: `${pos.y}%`,
@@ -1513,16 +1567,16 @@ function Aufstellung({ d, save, berechnet }) {
 
       <div className="px-4 pt-3 flex items-center gap-3">
         <span className="text-xs" style={{ color: C.grau }}>
-          Goldener Rahmen = von dir gesetzt, alles andere ist Vorschlag. Tippe einen Spieler an, um Alternativen für genau diese Position zu sehen.
+          Tippen: Alternativen wählen · Ziehen: Position frei verschieben · Gold: manuell gewählt.
         </span>
-        {Object.keys(d.elf).some((k) => k.startsWith(formation + ":")) && (
-          <button onClick={() => {
-            const neu = { ...d.elf };
-            Object.keys(neu).forEach((k) => { if (k.startsWith(formation + ":")) delete neu[k]; });
-            save({ ...d, elf: neu });
-          }} className="text-xs font-bold ml-auto shrink-0" style={{ color: C.rot }}>
-            zurücksetzen
-          </button>
+        <button type="button" onClick={resetPositions} className="text-xs font-bold shrink-0" style={{color:C.rot}}>Positionen ordnen</button>
+        {Object.keys(savedElf || {}).length > 0 && (
+          <button type="button" onClick={() => {
+            if (!window.confirm('Manuelle Spielerauswahl für dieses Spiel entfernen und neue Empfehlung anzeigen?')) return;
+            const neu = { ...(d.v11Aufstellungen || {}) };
+            delete neu[scope];
+            save({ ...d, v11Aufstellungen: neu });
+          }} className="text-xs font-bold shrink-0" style={{ color: C.rot }}>Neu berechnen</button>
         )}
       </div>
 

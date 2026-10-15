@@ -162,6 +162,140 @@ const fmtDatum = (s) => {
 const fmtNote = (v) => (v == null ? "—" : v.toFixed(2).replace(".", ","));
 const fmtProz = (v) => (v == null ? "—" : Math.round(v * 100) + " %");
 
+const xmlEsc = (s = "") => String(s)
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;")
+  .replace(/'/g, "&#39;");
+
+function formationKoordinaten(formation) {
+  const rows = REIHEN[formation] || [];
+  const map = {};
+  const yStart = 12;
+  const ySpan = 76;
+  rows.forEach((reihe, ri) => {
+    const y = rows.length === 1 ? 50 : yStart + (ri * ySpan) / Math.max(1, rows.length - 1);
+    reihe.forEach((si, ci) => {
+      const x = reihe.length === 1 ? 50 : 14 + (ci * 72) / Math.max(1, reihe.length - 1);
+      map[si] = { x, y };
+    });
+  });
+  return map;
+}
+
+function sortierteSpiele(spiele) {
+  return [...(spiele || [])].sort((a, b) => String(a.datum || "9999-99-99").localeCompare(String(b.datum || "9999-99-99")) || Number(a.nr || 0) - Number(b.nr || 0));
+}
+
+function naechstesSpiel(spiele) {
+  const heuteIso = heute();
+  return sortierteSpiele(spiele).find((sp) => sp.datum && sp.datum >= heuteIso) || sortierteSpiele(spiele)[0] || null;
+}
+
+function aufstellungsTitel(spiel) {
+  return spiel ? `Firtinaspor Herne III - ${spiel.gegner}` : "Firtinaspor Herne III";
+}
+
+function aufstellungsMeta(spiel, formation) {
+  const teile = [spiel?.datum ? fmtDatum(spiel.datum) : null, spiel?.zeit || null, spiel?.ha === 'H' ? 'Heimspiel' : spiel?.ha === 'A' ? 'Auswärtsspiel' : null, spiel?.wb || null, formation ? `Formation ${formation}` : null].filter(Boolean);
+  return teile.join(' · ');
+}
+
+function aufstellungsSvg({ formation, spiel, slots, elf, bank, reserve, nachName }) {
+  const W = 1080;
+  const H = 1600;
+  const fieldX = 90;
+  const fieldY = 190;
+  const fieldW = 900;
+  const fieldH = 980;
+  const coords = formationKoordinaten(formation);
+  const spielInfo = aufstellungsTitel(spiel);
+  const meta = aufstellungsMeta(spiel, formation);
+  const benchText = bank.length ? bank.map((w, i) => `${i + 12}. ${w.name}`).join('   ·   ') : 'Keine Bankspieler gesetzt';
+  const reserveText = reserve ? `17. Reserve: ${reserve.name}` : 'Keine Reserve gesetzt';
+
+  const playerNodes = slots.map((slot, si) => {
+    const pos = coords[si] || { x: 50, y: 50 };
+    const cx = fieldX + (fieldW * pos.x) / 100;
+    const cy = fieldY + (fieldH * pos.y) / 100;
+    const name = elf[si] || 'frei';
+    const wert = name && nachName[name] ? nachName[name] : null;
+    const note = wert?.oNote != null ? fmtNote(wert.oNote) : '';
+    return `
+      <g>
+        <circle cx="${cx}" cy="${cy}" r="54" fill="rgba(255,255,255,0.96)" stroke="#9B1B30" stroke-width="5" />
+        <text x="${cx}" y="${cy - 14}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#9B1B30">${xmlEsc(slot.p)}</text>
+        <text x="${cx}" y="${cy + 10}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1C1614">${xmlEsc(name)}</text>
+        <text x="${cx}" y="${cy + 32}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#7A716C">${xmlEsc(note)}</text>
+      </g>`;
+  }).join('');
+
+  return `
+  <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    <rect width="100%" height="100%" fill="#FBF8F6" />
+    <text x="80" y="80" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#9B1B30">haqq Trainer</text>
+    <text x="80" y="125" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#1C1614">${xmlEsc(spielInfo)}</text>
+    <text x="80" y="158" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#7A716C">${xmlEsc(meta)}</text>
+
+    <rect x="${fieldX}" y="${fieldY}" width="${fieldW}" height="${fieldH}" rx="36" fill="#2F6B3E" />
+    <rect x="${fieldX + 18}" y="${fieldY + 18}" width="${fieldW - 36}" height="${fieldH - 36}" rx="28" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <line x1="${fieldX + 18}" y1="${fieldY + fieldH / 2}" x2="${fieldX + fieldW - 18}" y2="${fieldY + fieldH / 2}" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <circle cx="${fieldX + fieldW / 2}" cy="${fieldY + fieldH / 2}" r="88" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <circle cx="${fieldX + fieldW / 2}" cy="${fieldY + fieldH / 2}" r="4" fill="rgba(255,255,255,0.9)" />
+    <rect x="${fieldX + 220}" y="${fieldY + 18}" width="${fieldW - 440}" height="140" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <rect x="${fieldX + 300}" y="${fieldY + 18}" width="${fieldW - 600}" height="58" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <rect x="${fieldX + 220}" y="${fieldY + fieldH - 158}" width="${fieldW - 440}" height="140" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+    <rect x="${fieldX + 300}" y="${fieldY + fieldH - 76}" width="${fieldW - 600}" height="58" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="5" />
+
+    ${playerNodes}
+
+    <text x="80" y="1245" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#1C1614">Bank</text>
+    <text x="80" y="1284" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1C1614">${xmlEsc(benchText)}</text>
+    <text x="80" y="1350" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#1C1614">${xmlEsc(reserveText)}</text>
+    <text x="80" y="1420" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#7A716C">Export aus der Firtinaspor-Trainer-App · automatisch empfohlen und manuell anpassbar</text>
+  </svg>`;
+}
+
+function aufstellungsBildSpeichern(args) {
+  const svg = aufstellungsSvg(args);
+  const svgBlob = new Blob([svg], { type: 'image/svg+xml;charset=utf-8' });
+  const svgUrl = URL.createObjectURL(svgBlob);
+  const img = new Image();
+  img.onload = () => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    canvas.height = 1600;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FBF8F6';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+    URL.revokeObjectURL(svgUrl);
+    canvas.toBlob((blob) => {
+      if (!blob) return;
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const spielDatum = args.spiel?.datum || heute();
+      a.href = url;
+      a.download = `aufstellung-${args.formation}-${spielDatum}.png`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }, 'image/png');
+  };
+  img.onerror = () => {
+    URL.revokeObjectURL(svgUrl);
+    const fallback = document.createElement('a');
+    fallback.href = svgUrl;
+    fallback.download = `aufstellung-${args.formation}-${args.spiel?.datum || heute()}.svg`;
+    document.body.appendChild(fallback);
+    fallback.click();
+    fallback.remove();
+  };
+  img.src = svgUrl;
+}
+
 function spielerAmDatum(s, datum) {
   if (s.aktiv === false && !s.aktivBis) return false;
   if (datum && s.dabeiSeit && datum < s.dabeiSeit) return false;
@@ -1275,10 +1409,20 @@ function Kaderplanung({ d, save, berechnet }) {
 /* ---------------------------------------------------------------- Aufstellung */
 function Aufstellung({ d, save, berechnet }) {
   const [offen, setOffen] = useState(null);
+  const [spielNr, setSpielNr] = useState(() => naechstesSpiel(d.spiele)?.nr || d.spiele[0]?.nr || "");
   const formation = d.formation;
   const slots = FORMATIONEN[formation];
   const elf = vorschlaege(berechnet.werte, formation, d.elf);
   const nachName = Object.fromEntries(berechnet.werte.map((w) => [w.name, w]));
+  const spielListe = useMemo(() => sortierteSpiele(d.spiele), [d.spiele]);
+  const spiel = spielListe.find((sp) => String(sp.nr) === String(spielNr)) || spielListe[0] || null;
+  const koords = useMemo(() => formationKoordinaten(formation), [formation]);
+
+  useEffect(() => {
+    if (!spielListe.some((sp) => String(sp.nr) === String(spielNr))) {
+      setSpielNr(naechstesSpiel(spielListe)?.nr || spielListe[0]?.nr || "");
+    }
+  }, [spielListe, spielNr]);
 
   const setzeSlot = (i, name) => {
     const neu = { ...d.elf };
@@ -1298,53 +1442,68 @@ function Aufstellung({ d, save, berechnet }) {
 
   return (
     <div className="pb-24">
-      <Kopf titel="Aufstellung" />
-      <div className="px-4 pb-4">
+      <Kopf titel="Aufstellung" rechts={<button onClick={() => aufstellungsBildSpeichern({ formation, spiel, slots, elf, bank, reserve, nachName })} className="text-sm font-bold px-3 py-1.5 rounded-full" style={{ background: C.rot, color: '#fff' }}>Bild speichern</button>} />
+
+      <div className="px-4 pb-4 space-y-3">
         <div className="flex gap-2 overflow-x-auto">{Object.keys(FORMATIONEN).map((f)=><button key={f} onClick={()=>save({...d,formation:f})} className="shrink-0 px-3 py-2 rounded-full text-sm font-bold" style={{background:formation===f?C.rot:"#EFE7E3",color:formation===f?"#fff":C.grau}}>{f}</button>)}</div>
+        <div className="space-y-3 md:space-y-0 md:flex md:items-end md:justify-between md:gap-3">
+          <div>
+            <div className="text-xs font-bold mb-1" style={{ color: C.grau }}>Spiel auswählen</div>
+            <select value={spielNr} onChange={(e) => setSpielNr(e.target.value)} className="w-full rounded-xl px-3 py-3 font-bold" style={{ border: `1px solid ${C.linie}`, background: '#fff' }}>
+              {spielListe.map((sp) => (
+                <option key={sp.nr} value={sp.nr}>{`${sp.nr}. ${sp.gegner} · ${sp.datum ? fmtDatum(sp.datum) : 'ohne Datum'}${sp.wb ? ` · ${sp.wb}` : ''}`}</option>
+              ))}
+            </select>
+          </div>
+          <div className="text-xs md:text-right" style={{ color: C.grau }}>
+            {spiel ? `${aufstellungsTitel(spiel)} · ${aufstellungsMeta(spiel, formation)}` : 'Kein Spiel gewählt'}
+          </div>
+        </div>
       </div>
 
-      <div className="mx-4 rounded-2xl overflow-hidden" style={{ background: C.rasen }}>
-        <div className="py-4 px-2" style={{
-          backgroundImage: `repeating-linear-gradient(180deg, rgba(255,255,255,.05) 0 34px, transparent 34px 68px)`,
-        }}>
-          {REIHEN[formation].map((reihe, ri) => (
-            <div key={ri} className="flex justify-center gap-2 py-2">
-              {reihe.map((si) => {
-                const name = elf[si];
-                const w = name ? nachName[name] : null;
-                const manuell = !!d.elf[formation + ":" + si];
-                return (
-                  <button key={si} onClick={() => setOffen(si)}
-                    className="rounded-lg px-1 py-2 text-center active:opacity-70"
-                    style={{
-                      width: `${Math.floor(88 / reihe.length)}%`, maxWidth: 96,
-                      background: name ? "rgba(255,255,255,.94)" : "rgba(255,255,255,.18)",
-                      border: manuell ? `2px solid ${C.gold}` : "2px solid transparent",
-                    }}>
-                    <div className="font-black tracking-wide"
-                      style={{ fontSize: 10, color: name ? C.rasen : "rgba(255,255,255,.85)" }}>
-                      {slots[si].p}
-                    </div>
-                    <div className="font-black leading-tight truncate"
-                      style={{ fontSize: 13, color: name ? C.tinte : "rgba(255,255,255,.7)" }}>
-                      {name || "frei"}
-                    </div>
-                    {w && w.oNote != null && (
-                      <div className="tabular-nums" style={{ fontSize: 10, color: C.grau }}>
-                        {fmtNote(w.oNote)}
-                      </div>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          ))}
+      <div className="mx-4 rounded-3xl overflow-hidden shadow-sm" style={{ background: C.rasen }}>
+        <div className="px-4 py-3 border-b" style={{ borderColor: 'rgba(255,255,255,.15)', color: '#fff' }}>
+          <div className="text-xs uppercase tracking-wide opacity-80">Empfohlene Formation</div>
+          <div className="text-lg font-black">{formation}</div>
+          {spiel && <div className="text-xs opacity-80 mt-1">{aufstellungsTitel(spiel)} · {aufstellungsMeta(spiel, '')}</div>}
+        </div>
+        <div className="relative" style={{ minHeight: 620, backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,.03) 0 34px, transparent 34px 68px)' }}>
+          <div className="absolute inset-4 rounded-3xl" style={{ border: '2px solid rgba(255,255,255,.75)' }} />
+          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4" style={{ borderLeft: '2px solid rgba(255,255,255,.75)' }} />
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 120, height: 120, border: '2px solid rgba(255,255,255,.75)' }} />
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ width: 6, height: 6, background: 'rgba(255,255,255,.85)' }} />
+          <div className="absolute left-1/2 -translate-x-1/2 top-4" style={{ width: 190, height: 84, border: '2px solid rgba(255,255,255,.75)', borderTop: 'none' }} />
+          <div className="absolute left-1/2 -translate-x-1/2 top-4" style={{ width: 90, height: 36, border: '2px solid rgba(255,255,255,.75)', borderTop: 'none' }} />
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-4" style={{ width: 190, height: 84, border: '2px solid rgba(255,255,255,.75)', borderBottom: 'none' }} />
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-4" style={{ width: 90, height: 36, border: '2px solid rgba(255,255,255,.75)', borderBottom: 'none' }} />
+
+          {slots.map((slot, si) => {
+            const name = elf[si];
+            const w = name ? nachName[name] : null;
+            const manuell = !!d.elf[formation + ":" + si];
+            const pos = koords[si] || { x: 50, y: 50 };
+            return (
+              <button
+                key={si}
+                onClick={() => setOffen(si)}
+                className="absolute -translate-x-1/2 -translate-y-1/2 rounded-2xl px-2 py-2 text-center active:opacity-70 shadow-sm"
+                style={{
+                  left: `${pos.x}%`, top: `${pos.y}%`, width: 102,
+                  background: name ? 'rgba(255,255,255,.96)' : 'rgba(255,255,255,.18)',
+                  border: manuell ? `3px solid ${C.gold}` : '2px solid rgba(255,255,255,.2)',
+                }}>
+                <div className="font-black tracking-wide" style={{ fontSize: 10, color: name ? C.rasen : 'rgba(255,255,255,.85)' }}>{slot.p}</div>
+                <div className="font-black leading-tight truncate" style={{ fontSize: 13, color: name ? C.tinte : 'rgba(255,255,255,.75)' }}>{name || 'frei'}</div>
+                {w && w.oNote != null && <div className="tabular-nums" style={{ fontSize: 10, color: C.grau }}>{fmtNote(w.oNote)}</div>}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       <div className="px-4 pt-3 flex items-center gap-3">
         <span className="text-xs" style={{ color: C.grau }}>
-          Goldener Rahmen = von dir gesetzt, alles andere ist Vorschlag.
+          Goldener Rahmen = von dir gesetzt, alles andere ist Vorschlag. Tippe einen Spieler an, um Alternativen für genau diese Position zu sehen.
         </span>
         {Object.keys(d.elf).some((k) => k.startsWith(formation + ":")) && (
           <button onClick={() => {

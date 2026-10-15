@@ -1452,22 +1452,31 @@ function Aufstellung({ d, save, berechnet }) {
     return { x: Math.max(9, Math.min(91, ((event.clientX - rect.left) / rect.width) * 100)), y: Math.max(10, Math.min(90, ((event.clientY - rect.top) / rect.height) * 100)) };
   };
   const beginDrag = (event, index) => {
-    if (event.button != null && event.button !== 0) return;
-    drag.current = { index, x: event.clientX, y: event.clientY, moved: false };
-    event.currentTarget.setPointerCapture?.(event.pointerId);
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    // Store a stable slot index. React may apply state updates after pointerup.
+    drag.current = { index, pointerId: event.pointerId, x: event.clientX, y: event.clientY, moved: false, lastUpdate: 0 };
+    try { event.currentTarget.setPointerCapture?.(event.pointerId); } catch (_) { /* capture not available */ }
   };
   const moveDrag = (event) => {
-    if (!drag.current) return;
-    if (Math.hypot(event.clientX - drag.current.x, event.clientY - drag.current.y) < 5 && !drag.current.moved) return;
-    drag.current.moved = true;
+    const current = drag.current;
+    if (!current || current.pointerId !== event.pointerId) return;
+    if (Math.hypot(event.clientX - current.x, event.clientY - current.y) < 9 && !current.moved) return;
+    current.moved = true;
+    // Mobile Safari can dispatch very many pointermove events per second.
+    // Limit React renders, and never dereference drag.current inside a queued updater.
+    const now = performance.now();
+    if (now - current.lastUpdate < 45) return;
+    current.lastUpdate = now;
+    const index = current.index;
     const pos = positionInPitch(event);
-    if (pos) setMoving((prev) => ({ ...prev, [drag.current.index]: pos }));
+    if (pos) setMoving((prev) => ({ ...prev, [index]: pos }));
   };
   const endDrag = (event) => {
-    if (!drag.current) return;
-    const {index, moved} = drag.current;
+    const current = drag.current;
+    if (!current || current.pointerId !== event.pointerId) return;
     drag.current = null;
-    if (!moved) { setOffen(index); return; }
+    const {index, moved} = current;
+    if (!moved) { setMoving({}); setOffen(index); return; }
     const pos = positionInPitch(event);
     setMoving({});
     if (!pos) return;

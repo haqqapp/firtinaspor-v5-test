@@ -62,3 +62,8 @@ Diese Version enthält ein Web-App-Manifest, App-Icons und einen Service Worker.
 - CSV-Export
 
 Die Version 2 nutzt weiterhin nur die bestehende `app_state`-JSON-Zeile in Supabase. Es ist keine neue SQL-Migration nötig.
+
+
+## V10
+- Aufstellung als Spielfeld
+- Bild speichern als PNG

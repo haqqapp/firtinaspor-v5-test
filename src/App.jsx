@@ -1411,10 +1411,20 @@ function Aufstellung({ d, save, berechnet }) {
 }
 
 function SlotWahl({ slot, werte, belegt, aktuell, onWahl, onZu }) {
-  const passend = werte.filter((w) => w.imKader && kannSpielen(w, slot.p) && w.name !== aktuell)
-    .sort((a, b) => b.score - a.score);
-  const rest = werte.filter((w) => w.imKader && !kannSpielen(w, slot.p) && w.name !== aktuell)
-    .sort((a, b) => b.score - a.score);
+  const ranking = (a, b) => aufstellungsWert(b, slot.p) - aufstellungsWert(a, slot.p);
+  const passend = werte.filter((w) => w.imKader && kannSpielen(w, slot.p) && w.name !== aktuell).sort(ranking);
+  const rest = werte.filter((w) => w.imKader && !kannSpielen(w, slot.p) && w.name !== aktuell).sort((a, b) => b.score - a.score);
+  const ursprung = werte.find(w => w.name === aktuell);
+  const begruendung = (w) => {
+    const staerke = positionsStaerke(w, slot.p);
+    const text = [`Position ${staerke}%`, `Gesamtscore ${Number(w.score || 0).toFixed(1)}`, `Training ${Math.round(Number(w.quote || 0) * (Number(w.quote || 0) <= 1 ? 100 : 1))}%`];
+    if (w.avg5 != null) text.push(`Form letzte 5: ${Number(w.avg5).toFixed(1)}`);
+    if (ursprung) {
+      const differenz = aufstellungsWert(w,slot.p)-aufstellungsWert(ursprung,slot.p);
+      if (Number.isFinite(differenz)) text.push(`${differenz > 0 ? '+' : ''}${(differenz/100).toFixed(1)} im Positionsvergleich`);
+    }
+    return text.join(' · ');
+  };
 
   const eintrag = (w, passt) => (
     <Zeile key={w.name} onClick={() => onWahl(w.name)}>
@@ -1423,12 +1433,13 @@ function SlotWahl({ slot, werte, belegt, aktuell, onWahl, onZu }) {
         {belegt.includes(w.name) && (
           <span className="ml-2 text-xs" style={{ color: C.grau }}>steht schon in der Elf</span>
         )}
+        <span className="block text-xs font-normal mt-1" style={{color:C.grau}}>{begruendung(w)}{belegt.includes(w.name) ? ' · Wird aus der bisherigen Position verschoben' : ''}</span>
       </span>
       <span className="text-xs font-bold px-2 py-0.5 rounded"
         style={{ background: passt ? C.rasenHell : "#F0E9E5", color: passt ? C.rasen : C.grau }}>
         {w.haupt}
       </span>
-      <span className="tabular-nums font-black w-12 text-right">{fmtNote(w.oNote)}</span>
+      <span className="tabular-nums font-black w-12 text-right">{passt ? (aufstellungsWert(w,slot.p)/100).toFixed(1) : '–'}</span>
     </Zeile>
   );
 
@@ -1452,6 +1463,7 @@ function SlotWahl({ slot, werte, belegt, aktuell, onWahl, onZu }) {
             </span>
           </Zeile>
         )}
+        <div className="px-4 pt-3 pb-1 text-xs" style={{color:C.grau}}>Sortiert nach Eignung für diese Position. Antippen übernimmt die Alternative; deine Auswahl wird gespeichert.</div>
         {passend.map((w) => eintrag(w, true))}
         {rest.length > 0 && (
           <div className="px-4 pt-4 pb-2 text-xs font-bold" style={{ color: C.grau }}>

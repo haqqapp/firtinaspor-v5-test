@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import exportDaten from "./exportDaten.json";
+import { supabase, supabaseConfigured } from "./supabase.js";
 
 /* ---------------------------------------------------------------- Konstanten */
 const KEY = "firtinaspor3-v1";
@@ -361,55 +361,73 @@ function aenderungsText(alt, neu) {
 }
 
 function useDaten(session) {
-  const STORAGE_KEY = "firtinaspor-v5-export-2026-10-12";
-  const [daten, setDaten] = useState(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      const alt = raw ? JSON.parse(raw) : exportDaten;
-      if (alt.v6SpielplanEingetragen) return normalisiereDaten(alt);
-      const bestehendeTermine = new Set((alt.trainings || []).map(t => t.datum));
-      const trainings = [...(alt.trainings || []), ...exportDaten.trainings.filter(t => !bestehendeTermine.has(t.datum))];
-      const bekannteSpiele = new Set((alt.spiele || []).map(sp => `${sp.datum}|${sp.gegner.toLowerCase()}`));
-      const spiele = [...(alt.spiele || [])];
-      for (const sp of exportDaten.spiele) {
-        if (!bekannteSpiele.has(`${sp.datum}|${sp.gegner.toLowerCase()}`) && !spiele.some(x => x.nr === sp.nr)) spiele.push(sp);
-      }
-      const merged = normalisiereDaten({ ...alt, trainings, spiele, v6SpielplanEingetragen: true });
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
-      return merged;
-    } catch {
-      return normalisiereDaten(exportDaten);
-    }
-  });
-  const [status, setStatus] = useState("bereit");
-  const datenRef = React.useRef(daten);
-
+  const [daten, setDaten] = useState(null);
+  const [status, setStatus] = useState("laden");
+  const datenRef = React.useRef(null);
+  const ladeZeitRef = React.useRef(null);
   useEffect(() => { datenRef.current = daten; }, [daten]);
 
-  const speichern = useCallback((neu, aktion) => {
+  useEffect(() => {
+    if (!session || !supabase) return;
+    let aktiv = true;
+    const laden = async () => {
+      setStatus("laden");
+      const { data, error } = await supabase.from("app_state").select("data,updated_at").eq("id", "main").maybeSingle();
+      if (!aktiv) return;
+      if (error) { console.error(error); setStatus("fehler"); return; }
+      if (data?.data) {
+        const wert = normalisiereDaten(data.data);
+        datenRef.current = wert;
+        ladeZeitRef.current = data.updated_at;
+        setDaten(wert); setStatus("bereit");
+        return;
+      }
+      // Nie automatisch vorhandene Daten mit Testdaten ueberschreiben.
+      // Wenn die Tabelle leer ist, Live-Daten zuerst bewusst initialisieren.
+      setStatus("nicht-initialisiert");
+    };
+    laden();
+    const channel = supabase.channel("firtinaspor-v5-app-state")
+      .on("postgres_changes", { event: "UPDATE", schema: "public", table: "app_state", filter: "id=eq.main" }, (payload) => {
+        if (payload.new?.data) {
+          const wert = normalisiereDaten(payload.new.data);
+          datenRef.current = wert;
+          ladeZeitRef.current = payload.new.updated_at;
+          setDaten(wert);
+          setStatus("bereit");
+        }
+      }).subscribe();
+    return () => { aktiv = false; supabase.removeChannel(channel); };
+  }, [session?.user?.id]);
+
+  const speichern = useCallback(async (neu, aktion) => {
+    if (!session || !supabase || !datenRef.current) return;
     const alt = datenRef.current;
     const normal = normalisiereDaten(neu);
-    const eintrag = {
+    normal.aenderungen = [{
       id: Date.now() + "-" + Math.random().toString(36).slice(2, 7),
-      zeit: new Date().toISOString(),
-      trainer: session?.user?.email || "Offline-Testtrainer",
+      zeit: new Date().toISOString(), trainer: session.user.email || session.user.id,
       aktion: aktion || aenderungsText(alt, normal),
-    };
-    normal.aenderungen = [eintrag, ...(normal.aenderungen || [])].slice(0, 300);
-    setDaten(normal);
-    datenRef.current = normal;
+    }, ...(normal.aenderungen || [])].slice(0, 300);
     setStatus("speichert");
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(normal));
-      setStatus("bereit");
-    } catch (e) {
-      console.error(e);
+    // Pruefung auf parallele Aenderungen: bei Konflikt nicht ueberschreiben.
+    const query = supabase.from("app_state").update({ data: normal, updated_by: session.user.id }).eq("id", "main");
+    const checked = ladeZeitRef.current ? query.eq("updated_at", ladeZeitRef.current) : query;
+    const { data: updated, error } = await checked.select("updated_at").maybeSingle();
+    if (error || !updated) {
+      console.error(error || "Konflikt bei paralleler Bearbeitung");
       setStatus("fehler");
+      window.alert("Speichern fehlgeschlagen oder die Daten wurden inzwischen auf einem anderen Geraet geaendert. Bitte Seite neu laden und Aenderung erneut eingeben.");
+      return;
     }
-  }, [session?.user?.email]);
-
+    ladeZeitRef.current = updated.updated_at;
+    datenRef.current = normal;
+    setDaten(normal);
+    setStatus("bereit");
+  }, [session?.user?.id, session?.user?.email]);
   return [daten, speichern, status];
 }
+
 const istLigaSpiel = (sp) => sp && !/freundschaft|testspiel/i.test(String(sp.wb || ""));
 /* ---------------------------------------------------------------- Berechnung */
 function trainerEintraege(d, spielNr, name) {
@@ -2064,7 +2082,7 @@ function HauptApp({ session }) {
     return (
       <div className="min-h-screen flex items-center justify-center" style={{ background: C.papier }}>
         <div className="text-sm" style={{ color: C.grau }}>
-          {status === "laden" ? "Testdaten werden geladen …" : "Testdaten konnten nicht geladen werden."}
+          {status === "laden" ? "Gemeinsame Daten werden geladen …" : "Live-Daten konnten nicht geladen werden. Bitte Verbindung prüfen."}
         </div>
       </div>
     );
@@ -2083,9 +2101,10 @@ function HauptApp({ session }) {
           </div>
           <div className="flex items-center gap-3">
             <div className="text-xs text-white text-right" style={{ opacity: status === "speichert" ? 0.9 : 0.65 }}>
-              {status === "speichert" ? "speichert …" : status === "fehler" ? "Speicherfehler" : "lokal gespeichert"}
+              {status === "speichert" ? "speichert …" : status === "fehler" ? "Speicherfehler" : "live gespeichert"}
             </div>
             <InstallAppButton />
+            <button onClick={() => supabase.auth.signOut()} className="text-xs font-bold px-2 py-1 rounded" style={{ background: "rgba(255,255,255,.15)", color: "#fff" }}>Abmelden</button>
           </div>
         </div>
       </div>
@@ -2102,18 +2121,42 @@ function HauptApp({ session }) {
       <Inhalt d={d} save={save} berechnet={berechnet} session={session} />
 
       <div className="px-4 py-4 text-xs" style={{ color: C.grau }}>
-        OFFLINE-TEST · Daten bleiben nur in diesem Browser und verändern eure Live-App nicht.
+        ONLINE-TESTKANDIDAT · Gemeinsame Supabase-Daten. Vor produktivem Einsatz Datensicherung und getrennten Test durchführen.
       </div>
     </div>
   );
 }
 
 export default function App() {
-  const demoSession = {
-    user: {
-      id: "offline-testtrainer",
-      email: "testtrainer@offline.local",
-    },
-  };
-  return <HauptApp session={demoSession} />;
+  const [session, setSession] = useState(undefined);
+
+  useEffect(() => {
+    if (!supabaseConfigured || !supabase) {
+      setSession(null);
+      return;
+    }
+    supabase.auth.getSession().then(({ data }) => setSession(data.session));
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, nextSession) => setSession(nextSession));
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  if (!supabaseConfigured) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4" style={{ background: C.papier, color: C.tinte }}>
+        <div className="max-w-md rounded-2xl p-5" style={{ background: "#fff", border: `1px solid ${C.linie}` }}>
+          <h1 className="text-xl font-black mb-2">Supabase noch nicht verbunden</h1>
+          <p className="text-sm" style={{ color: C.grau }}>
+            Trage in Vercel die Variablen VITE_SUPABASE_URL und VITE_SUPABASE_ANON_KEY ein und deploye die App neu.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (session === undefined) {
+    return <div className="min-h-screen flex items-center justify-center" style={{ background: C.papier }}>Lädt …</div>;
+  }
+
+  return session ? <HauptApp session={session} /> : <Login />;
 }
+
